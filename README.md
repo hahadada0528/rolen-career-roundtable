@@ -95,7 +95,7 @@
 
 ```bash
 # 1. 克隆
-git clone https://github.com/<your-user>/rolen-career-roundtable.git
+git clone https://github.com/hahadada0528/rolen-career-roundtable.git
 cd rolen-career-roundtable
 
 # 2. 虚拟环境与依赖
