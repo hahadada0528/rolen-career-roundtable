@@ -1,0 +1,1683 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-09T11:37:50+00:00",
+  "industry": {
+    "by_profession": {
+      "人力资源": [
+        {
+          "title": "SHRM Total Rewards",
+          "url": "https://www.shrm.org/topics-tools/topics/total-rewards",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 1,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "SHRM Recruiting 主题实践",
+          "url": "https://www.shrm.org/topics-tools/topics/recruiting",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "惠城区 人力 资源和社会保障局",
+          "url": "http://www.hcq.gov.cn/bmzj/qrlzyhshbzj/index.html",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "国家税务总局政策法规库 - chinatax.gov.cn",
+          "url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "blurb": "chinatax.gov.cn https:// fgk.chinatax.gov.cn › zcfgk › ... 国家税务总局政策法规库 - chinatax.gov.cn 2018年12月29日 · 第一条 为了规范社会保险关系，维护公民参加社会保险和享受社会保险待遇的合法权益，使公民共享发展成果，促 …",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "《 职工带薪年休假条例 》国务院令第514号（ 全文 ）",
+          "url": "https://www.waizi.org.cn/law/14229.html",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-08T05:34:23+00:00"
+        },
+        {
+          "title": "中华人民共和国 社会保险法",
+          "url": "https://www.gsjn.gov.cn/zfxxgk/xzxxgk/zpz/fdzdgknr/shbx/art/2022/art_86a91bef1b8b4267b214c1681abf7d85.html",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-08T05:34:23+00:00"
+        },
+        {
+          "title": "中华人民共和国 社会保险法 __中国政府网",
+          "url": "https://www.gov.cn/guoqing/2021-10/29/content_5647616.htm",
+          "blurb": "www.gov.cn https:// www.gov.cn › guoqing 中华人民共和国 社会保险法 __中国政府网 2010年10月28日 · 第一条 为了规范社会保险关系，维护公民参加社会保险和享受社会保险待遇的合法权益，使公民共享发展成果，促 …",
+          "hits": 5,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "中华人民共和国国务院令（第514号） 职工带薪年休假条例",
+          "url": "https://www.gov.cn/gongbao/content/content_859865.htm",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-08T05:34:23+00:00"
+        },
+        {
+          "title": "职工带薪年休假条例 （国务院令第514号）",
+          "url": "https://www.gov.cn/flfg/2007-12/16/content_835527.htm",
+          "blurb": "www.gov.cn https://www.gov.cn › flfg 职工带薪年休假条例 （国务院令第514号） 2007年12月16日 · 第一条 为了维护职工休息休假权利，调动职工工作积极性，根据劳动法和公务员法，制定本条例。 第二条 机关、团 …",
+          "hits": 4,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-08T05:34:23+00:00"
+        },
+        {
+          "title": "中华人民共和国劳动合同法（市场监管总局转载全文）",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "blurb": "劳动合同订立/履行/变更/解除全文",
+          "hits": 5,
+          "verified": false,
+          "source": "norms_seed",
+          "last_at": "2026-09-08T05:12:03.290221+00:00"
+        },
+        {
+          "title": "中华人民共和国劳动法（市场监管总局转载全文）",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+          "blurb": "劳动法全文：劳动合同、工时休假、社保福利、培训与争议处理底线。",
+          "hits": 12,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "中华人民共和国社会保险法（市场监管总局转载全文）",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e81d115419b4463ebb59ec46467fb136.html",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 12,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "人力资源市场暂行条例（市场监管总局转载全文）",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d0f9fd2e7dcb4286a55c87b188f38bbc.html",
+          "blurb": "招聘信息真实合法、订立合同与办理社保等市场规范；行业行政法规。",
+          "hits": 12,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "职工带薪年休假条例（中国人大网）",
+          "url": "http://www.npc.gov.cn/npc/c2/c188/c217/201905/t20190522_30040.html",
+          "blurb": "年休假天数与应休未休300%报酬等休假规范，员工关系合规。",
+          "hits": 12,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "中华人民共和国劳动争议调解仲裁法（中国人大网）",
+          "url": "http://www.npc.gov.cn/c2986/c4488/201905/t20190523_48437.html",
+          "blurb": "劳动争议调解仲裁",
+          "hits": 5,
+          "verified": false,
+          "source": "norms_seed",
+          "last_at": "2026-09-08T05:12:03.290221+00:00"
+        },
+        {
+          "title": "人社部办公厅颁布企业人力资源管理师等国家职业技能标准的通知",
+          "url": "https://www.gov.cn/zhengce/zhengceku/2019-09/26/content_5433627.htm",
+          "blurb": "官方颁布通知：职业编码含企业人力资源管理师（4-07-03-04）。",
+          "hits": 12,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "企业人力资源管理师国家职业技能标准 PDF",
+          "url": "https://rsj.gz.gov.cn/attachment/7/7724/7724433/9989710.pdf",
+          "blurb": "国家职业技能标准附件：等级与劳动法/劳动合同法等相关知识要求。",
+          "hits": 8,
+          "verified": false,
+          "source": "user_approved",
+          "last_at": "2026-09-08T05:26:13+00:00"
+        },
+        {
+          "title": "人力资源招聘专员岗位职责（猎聘）",
+          "url": "https://www.liepin.com/gw/rlzyzpzy/",
+          "blurb": "招聘全流程职责频道（非新闻）：筛选、面试、入职、渠道。",
+          "hits": 12,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "招聘专员岗位说明书标准范本（有招）",
+          "url": "https://youzhao.io/zhize/162",
+          "blurb": "岗位说明书范本：需求、渠道、面试、入职、招聘分析报告。",
+          "hits": 11,
+          "verified": true,
+          "source": "user_approved",
+          "last_at": "2026-09-09T04:32:58+00:00"
+        },
+        {
+          "title": "人力资源KPI指标体系与实施（i人事）",
+          "url": "https://blog.ihr360.com/p/84379/",
+          "blurb": "实践向 KPI 口径（非国标）：招聘周期/完成率、培训覆盖、满意度等。",
+          "hits": 12,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T04:35:57+00:00"
+        },
+        {
+          "title": "人力资源经理岗位职责（猎聘岗位频道）",
+          "url": "https://www.liepin.com/gw/renliziyuanjingli/",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 1,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T04:57:56+00:00"
+        },
+        {
+          "title": "玉溪人才网",
+          "url": "https://yxrc.cn/yxrc/fore.g",
+          "blurb": "yxrc.cn https://yxrc.cn › yxrc › fore.g 玉溪人才网 您好，欢迎您的光临！ 您是第 39357123 位访客 Copyright © 2026 玉溪市人力资源社会保障信息中心，版权所有，未经授权，不得转 …",
+          "hits": 5,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T08:13:49+00:00"
+        },
+        {
+          "title": "中人网—专注企业培训 | 企业内训 | 公开课 | 训战项目 | 领导",
+          "url": "http://www.chinahrd.net/",
+          "blurb": "中人网—专注企业培训 | 企业内训 | 公开课 | 训战项目 | 领导 该页面因服务器不稳定可能无法正常访问 ! 训战结合,业务认同, HR 满意,祝贺用丰硕的训战成果交付的松苗计划顺利结营。 ... 05-24 查看详情 聚变©️福田高级经理训战营 带领团队达成目标的心法和... 商城     三千强 www.chinahrd.net 反馈",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T04:57:56+00:00"
+        },
+        {
+          "title": "企业人力资源管理师国家职业标准（2019修订）说明",
+          "url": "https://www.233.com/hr/zixun/law/201904/03154716748.html",
+          "blurb": "国家职业标准修订说明与等级划分，用于职业标准/能力模型章节。",
+          "hits": 16,
+          "verified": true,
+          "source": "collect_search",
+          "last_at": "2026-09-08T05:07:09+00:00"
+        }
+      ],
+      "python工程师": [
+        {
+          "title": "戴尔笔记本电脑_台式电脑_服务器_电脑配件_戴尔官方网站 | Dell",
+          "url": "https://www.dell.com/zh-cn",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "NCRE - 中国教育考试网",
+          "url": "https://ncre.neea.edu.cn/",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "中国 计算机 技术职业资格网",
+          "url": "https://www.ruankao.org.cn/",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "Java 详细安装配置教程 (Windows)，从下载到配置—— Java -1. ...",
+          "url": "https://blog.csdn.net/weixin_45710060/article/details/123315280",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "计算机 原理入门（非常详细）从零基础入门到精通，看完这 ...",
+          "url": "https://blog.csdn.net/Javachichi/article/details/131619983",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "计算机基础（01）基础知识 _ 计算机 基础知识-CSDN博客",
+          "url": "https://blog.csdn.net/vviccc/article/details/116493152",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "技术部KPI绩效考核指标（OKR管理学院）",
+          "url": "https://www.pekhr.com/lib/13891.html",
+          "blurb": "用户批准入库的调研链接",
+          "hits": 1,
+          "verified": false,
+          "source": "user_approved",
+          "last_at": "2026-09-01T08:01:46+00:00"
+        },
+        {
+          "title": "人社部/工信部颁布计算机程序设计员等国家职业技能标准通知",
+          "url": "https://www.rcgov.cn/zcfg/148.html",
+          "blurb": "国家职业技能标准颁布通知（含计算机程序设计员），行业官方依据。",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "阿里 P6 与 P7 能力差异（芋道源码）",
+          "url": "https://www.iocoder.cn/Fight/Ali-is-the-main-difference-between-P6-and-P7/",
+          "blurb": "职级能力差异：执行者 vs 专家/带队，支撑能力模型归纳。",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "Java开发工程师岗位说明（人人文库）",
+          "url": "https://www.renrendoc.com:8443/paper/531422254.html",
+          "blurb": "岗位说明文档：职责、联调、性能、文档与任职资格。",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "Java工程师岗位职责（猎聘岗位频道）",
+          "url": "https://www.liepin.com/gw/javagcs0660/",
+          "blurb": "公开岗位职责/工作内容归纳，用于成果标准与必做事项对照。",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "Java工程师岗位职责与招聘要求（高校人才网）",
+          "url": "https://www.gaoxiaojob.com/bk_jobs/8muft6qs",
+          "blurb": "归纳 Java 工程师岗位职责与任职要求，可对照背调做行业能力画像。",
+          "hits": 2,
+          "verified": false,
+          "source": "user_approved",
+          "last_at": "2026-09-01T08:01:46+00:00"
+        },
+        {
+          "title": "计算机程序设计员国家职业标准简介（院校转载）",
+          "url": "https://www.jscfa.edu.cn/jxjyc/2023/0320/c1871a26494/page.htm",
+          "blurb": "职业定义、等级与鉴定要求，用于职业标准章节。",
+          "hits": 2,
+          "verified": false,
+          "source": "user_approved",
+          "last_at": "2026-09-01T08:01:46+00:00"
+        },
+        {
+          "title": "软件开发KPI绩效考核怎么制定（蓝凌叮当）",
+          "url": "https://www.dingteam.com/article/596",
+          "blurb": "软件开发岗 KPI：交付、缺陷、接口可用性、评审通过率等验收向指标。",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "研发部绩效考核体系搭建（阿里云开发者社区）",
+          "url": "https://developer.aliyun.com/article/1678524",
+          "blurb": "研发绩效维度与可量化指标设计，支撑成果标准与中间质检。",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "阿里 P7 能力水平解读（阿里云开发者社区）",
+          "url": "https://developer.aliyun.com/article/1358891",
+          "blurb": "大厂职级能力模型（P6/P7），对照进阶技能与影响力要求。",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-01T08:05:29+00:00"
+        },
+        {
+          "title": "高级Java工程师岗位说明书模板（三茅招聘）",
+          "url": "https://zhaopin.hrloo.com/hr/tools/jd/4",
+          "blurb": "含岗位职责与任职要求模板，可提炼验收与能力要求。",
+          "hits": 2,
+          "verified": false,
+          "source": "user_approved",
+          "last_at": "2026-09-01T08:01:46+00:00"
+        }
+      ],
+      "java工程师": [
+        {
+          "title": "戴尔笔记本电脑_台式电脑_服务器_电脑配件_戴尔官方网站 | Dell",
+          "url": "https://www.dell.com/zh-cn",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "NCRE - 中国教育考试网",
+          "url": "https://ncre.neea.edu.cn/",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "Java 详细安装配置教程 (Windows)，从下载到配置—— Java -1. ...",
+          "url": "https://blog.csdn.net/weixin_45710060/article/details/123315280",
+          "blurb": "csdn.net https://blog.csdn.net › article › details › ... Java 详细安装配置教程 (Windows)，从下载到配置—— Java -1. ... 2022年6月9日 · 本文详细介绍了Java的起源、版本体系以及Oracle公司的关系。 接着，提供了Java的下载、安装步骤，包括JDK …",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "NCRE - 中国教育考试网",
+          "url": "https://ncre.neea.edu.cn/xhtml1/folder/1507/770-1.htm",
+          "blurb": "neea.edu.cn https://ncre.neea.edu.cn › folder NCRE - 中国教育考试网 2026年6月24日 · 考试介绍 更多> 全国计算机等级考试（National Computer Rank Examination，简称NCRE），是经原国家教育委员 …",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "计算机基础（01）基础知识 _ 计算机 基础知识-CSDN博客",
+          "url": "https://blog.csdn.net/vviccc/article/details/116493152",
+          "blurb": "csdn.net https://blog.csdn.net › vviccc › article › details 计算机基础（01）基础知识 _ 计算机 基础知识-CSDN博客 2024年10月21日 · 1.3.4 计算机病毒及其防治 @1 计算机病毒：人为设计的程序，隐蔽在计算机中，对计算机不定期造成破坏 @2 计算 …",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "Java开发工程师岗位说明（人人文库）",
+          "url": "https://www.renrendoc.com:8443/paper/531422254.html",
+          "blurb": "岗位说明文档：职责、联调、性能、文档与任职资格。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "Java工程师岗位职责（猎聘岗位频道）",
+          "url": "https://www.liepin.com/gw/javagcs0660/",
+          "blurb": "公开岗位职责/工作内容归纳，用于成果标准与必做事项对照。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "人社部/工信部颁布计算机程序设计员等国家职业技能标准通知",
+          "url": "https://www.rcgov.cn/zcfg/148.html",
+          "blurb": "国家职业技能标准颁布通知（含计算机程序设计员），行业官方依据。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "阿里 P6 与 P7 能力差异（芋道源码）",
+          "url": "https://www.iocoder.cn/Fight/Ali-is-the-main-difference-between-P6-and-P7/",
+          "blurb": "职级能力差异：执行者 vs 专家/带队，支撑能力模型归纳。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "软件开发KPI绩效考核怎么制定（蓝凌叮当）",
+          "url": "https://www.dingteam.com/article/596",
+          "blurb": "软件开发岗 KPI：交付、缺陷、接口可用性、评审通过率等验收向指标。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "研发部绩效考核体系搭建（阿里云开发者社区）",
+          "url": "https://developer.aliyun.com/article/1678524",
+          "blurb": "研发绩效维度与可量化指标设计，支撑成果标准与中间质检。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "阿里 P7 能力水平解读（阿里云开发者社区）",
+          "url": "https://developer.aliyun.com/article/1358891",
+          "blurb": "大厂职级能力模型（P6/P7），对照进阶技能与影响力要求。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        }
+      ]
+    },
+    "by_family": {
+      "软件工程师": [
+        {
+          "title": "戴尔笔记本电脑_台式电脑_服务器_电脑配件_戴尔官方网站 | Dell",
+          "url": "https://www.dell.com/zh-cn",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "NCRE - 中国教育考试网",
+          "url": "https://ncre.neea.edu.cn/",
+          "blurb": "open_page 核实并成功 wiki 入库",
+          "hits": 2,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "Java 详细安装配置教程 (Windows)，从下载到配置—— Java -1. ...",
+          "url": "https://blog.csdn.net/weixin_45710060/article/details/123315280",
+          "blurb": "csdn.net https://blog.csdn.net › article › details › ... Java 详细安装配置教程 (Windows)，从下载到配置—— Java -1. ... 2022年6月9日 · 本文详细介绍了Java的起源、版本体系以及Oracle公司的关系。 接着，提供了Java的下载、安装步骤，包括JDK …",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "NCRE - 中国教育考试网",
+          "url": "https://ncre.neea.edu.cn/xhtml1/folder/1507/770-1.htm",
+          "blurb": "neea.edu.cn https://ncre.neea.edu.cn › folder NCRE - 中国教育考试网 2026年6月24日 · 考试介绍 更多> 全国计算机等级考试（National Computer Rank Examination，简称NCRE），是经原国家教育委员 …",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "计算机基础（01）基础知识 _ 计算机 基础知识-CSDN博客",
+          "url": "https://blog.csdn.net/vviccc/article/details/116493152",
+          "blurb": "csdn.net https://blog.csdn.net › vviccc › article › details 计算机基础（01）基础知识 _ 计算机 基础知识-CSDN博客 2024年10月21日 · 1.3.4 计算机病毒及其防治 @1 计算机病毒：人为设计的程序，隐蔽在计算机中，对计算机不定期造成破坏 @2 计算 …",
+          "hits": 3,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-02T05:57:01+00:00"
+        },
+        {
+          "title": "Java开发工程师岗位说明（人人文库）",
+          "url": "https://www.renrendoc.com:8443/paper/531422254.html",
+          "blurb": "岗位说明文档：职责、联调、性能、文档与任职资格。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "Java工程师岗位职责（猎聘岗位频道）",
+          "url": "https://www.liepin.com/gw/javagcs0660/",
+          "blurb": "公开岗位职责/工作内容归纳，用于成果标准与必做事项对照。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "人社部/工信部颁布计算机程序设计员等国家职业技能标准通知",
+          "url": "https://www.rcgov.cn/zcfg/148.html",
+          "blurb": "国家职业技能标准颁布通知（含计算机程序设计员），行业官方依据。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "阿里 P6 与 P7 能力差异（芋道源码）",
+          "url": "https://www.iocoder.cn/Fight/Ali-is-the-main-difference-between-P6-and-P7/",
+          "blurb": "职级能力差异：执行者 vs 专家/带队，支撑能力模型归纳。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "软件开发KPI绩效考核怎么制定（蓝凌叮当）",
+          "url": "https://www.dingteam.com/article/596",
+          "blurb": "软件开发岗 KPI：交付、缺陷、接口可用性、评审通过率等验收向指标。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "研发部绩效考核体系搭建（阿里云开发者社区）",
+          "url": "https://developer.aliyun.com/article/1678524",
+          "blurb": "研发绩效维度与可量化指标设计，支撑成果标准与中间质检。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        },
+        {
+          "title": "阿里 P7 能力水平解读（阿里云开发者社区）",
+          "url": "https://developer.aliyun.com/article/1358891",
+          "blurb": "大厂职级能力模型（P6/P7），对照进阶技能与影响力要求。",
+          "hits": 15,
+          "verified": true,
+          "source": "ingest_ok",
+          "last_at": "2026-09-09T09:18:32+00:00"
+        }
+      ]
+    },
+    "queries": {
+      "人力资源": [
+        "人力资源 职级体系 能力模型",
+        "人力资源 绩效考核 KPI 验收标准",
+        "人力资源 岗位职责 任职要求",
+        "劳动合同法 全文 site:samr.gov.cn",
+        "劳动法 全文 site:samr.gov.cn OR site:npc.gov.cn",
+        "社会保险法 全文 site:samr.gov.cn",
+        "人力资源市场暂行条例 全文",
+        "人力资源 工作流程 制度 指南",
+        "人力资源 行业规范 最新政策 site:gov.cn",
+        "人力资源 绩效考核 指标 标准",
+        "人力资源 职业标准 能力要求",
+        "职工带薪年休假条例 全文",
+        "劳动争议调解仲裁法 全文",
+        "企业人力资源管理师 国家职业技能标准 颁布",
+        "人力资源 岗位说明书 任职要求",
+        "招聘专员 岗位职责"
+      ],
+      "python工程师": [
+        "Java 后端工程师 能力模型 职级",
+        "python工程师 开发规范 评审 合格线",
+        "计算机 软件工程 技术人员 职业标准",
+        "软件工程师 国家职业标准 site:gov.cn",
+        "python工程师 微服务 分布式 岗位要求",
+        "python工程师 代码质量 交付标准 验收",
+        "python工程师 招聘要求 技能要求",
+        "python工程师 行业要求 职业标准",
+        "python工程师 岗位说明书 工作标准",
+        "python工程师 职级体系 能力模型",
+        "python工程师 绩效考核 KPI 验收标准",
+        "python工程师 岗位职责 任职要求"
+      ],
+      "java工程师": [
+        "Java 后端工程师 能力模型 职级",
+        "java工程师 开发规范 评审 合格线",
+        "计算机 软件工程 技术人员 职业标准",
+        "软件工程师 国家职业标准 site:gov.cn",
+        "java工程师 微服务 分布式 岗位要求",
+        "java工程师 代码质量 交付标准 验收",
+        "java工程师 代码质量 交付标准 规范",
+        "java工程师 职级 能力模型 岗位说明书",
+        "java工程师 绩效考核 KPI 验收标准",
+        "java工程师 岗位职责 任职要求",
+        "java工程师 职业标准 site:gov.cn",
+        "java工程师 招聘要求 技能要求 行业",
+        "java工程师 招聘要求 技能要求",
+        "java工程师 行业要求 职业标准",
+        "java工程师 岗位说明书 工作标准",
+        "java工程师 职级体系 能力模型"
+      ]
+    },
+    "bad_urls": [
+      {
+        "url": "https://youzhao.io/zhize/162",
+        "reason": "无法打开",
+        "at": "2026-09-09T04:35:57+00:00"
+      },
+      {
+        "url": "https://rsj.gz.gov.cn/attachment/7/7724/7724433/9989710.pdf",
+        "reason": "无法打开",
+        "at": "2026-09-08T05:34:23+00:00"
+      },
+      {
+        "url": "https://www.pekhr.com/lib/13891.html",
+        "reason": "无法打开",
+        "at": "2026-09-01T08:05:29+00:00"
+      },
+      {
+        "url": "https://www.gaoxiaojob.com/bk_jobs/8muft6qs",
+        "reason": "无法打开",
+        "at": "2026-09-01T08:05:29+00:00"
+      },
+      {
+        "url": "https://www.jscfa.edu.cn/jxjyc/2023/0320/c1871a26494/page.htm",
+        "reason": "无法打开",
+        "at": "2026-09-01T08:05:29+00:00"
+      },
+      {
+        "url": "https://zhaopin.hrloo.com/hr/tools/jd/4",
+        "reason": "无法打开",
+        "at": "2026-09-01T08:05:29+00:00"
+      },
+      {
+        "url": "http://mp.weixin.qq.com/s",
+        "reason": "无法打开",
+        "at": "2026-09-01T04:50:45+00:00"
+      },
+      {
+        "url": "https://www.pekhr.com/lib/13892.html",
+        "reason": "无法打开",
+        "at": "2026-09-01T04:37:40+00:00"
+      },
+      {
+        "url": "https://www.beisen.com/article/1845",
+        "reason": "无法打开",
+        "at": "2026-09-01T04:37:39+00:00"
+      },
+      {
+        "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zwgk/zcwj/zcjd/202008/t20200807_358234.html",
+        "reason": "无法打开",
+        "at": "2026-09-01T04:37:39+00:00"
+      },
+      {
+        "url": "https://zhaopin.hrloo.com/hr/tools/jd/2",
+        "reason": "无法打开",
+        "at": "2026-09-01T04:37:39+00:00"
+      },
+      {
+        "url": "https://zhaopin.hrloo.com/hr/tools/jd/1",
+        "reason": "无法打开",
+        "at": "2026-09-01T04:37:39+00:00"
+      },
+      {
+        "url": "https://www.zhihu.com/question/502750991",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://www.zhihu.com/tardis/bd/art/364115640",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://zhuanlan.zhihu.com/p/2072333471326933986",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://zhuanlan.zhihu.com/p/2061404657713419691",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://zhuanlan.zhihu.com/p/2056059587866973009",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://hrss.gd.gov.cn/",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://rlsbj.cq.gov.cn/",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://hrss.sz.gov.cn/",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://www.mohrss.gov.cn/",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://www.12333.gov.cn/portal/introduce",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://zhuanlan.zhihu.com/p/1920169530161865192",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://rsj.beijing.gov.cn/index.html",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.289231+00:00"
+      },
+      {
+        "url": "https://www.zhihu.com/topic/19618407/hot",
+        "reason": "门户/知乎噪声/非规范正文",
+        "at": "2026-09-08T05:12:03.290221+00:00"
+      }
+    ]
+  },
+  "tools": {
+    "by_profession": {
+      "人力资源": [
+        {
+          "title": "工作事项：薪资核算、社保公积金办理、个税申报",
+          "url": "https://o-dingtalk.com.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:37:08+00:00"
+        },
+        {
+          "title": "工作事项：日常考勤管理、员工关系处理、劳动争议解决",
+          "url": "https://i-dingtalk.com.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:20:51+00:00"
+        },
+        {
+          "title": "工作事项：日常考勤管理、员工关系处理、劳动争议解决",
+          "url": "https://www.dingtalk.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:20:51+00:00"
+        },
+        {
+          "title": "工作事项：日常考勤管理、员工关系处理、劳动争议解决",
+          "url": "https://www.dingtalk.com/download",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:20:51+00:00"
+        },
+        {
+          "title": "工作事项：薪资核算、社保公积金办理、个税申报",
+          "url": "https://www.feishu.cn/download",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:20:51+00:00"
+        },
+        {
+          "title": "工作事项：薪资核算、社保公积金办理、个税申报",
+          "url": "https://www.163.com/dy/article/KUHH8LD10553TS8Q.html",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:20:51+00:00"
+        },
+        {
+          "title": "工作事项：薪资核算、社保公积金办理、个税申报",
+          "url": "https://www.feishu.cn/?from_site=lark",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:20:51+00:00"
+        },
+        {
+          "title": "工作事项：日常考勤管理、员工关系处理、劳动争议解决",
+          "url": "https://www.microsoft.com/zh-cn/microsoft-365",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:37:08+00:00"
+        },
+        {
+          "title": "工作事项：制定人才培养与激励机制",
+          "url": "https://www.chinahrd.net/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T08:51:34+00:00"
+        },
+        {
+          "title": "工作事项：定期收集人力数据，进行分析并输出改进建议",
+          "url": "https://app.mokahr.com/login",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:20:51+00:00"
+        },
+        {
+          "title": "工作事项：进行背景调查",
+          "url": "https://www.51job.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 5,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:37:08+00:00"
+        },
+        {
+          "title": "工作事项：筛选简历",
+          "url": "https://www.zhaopin.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 13,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T08:51:34+00:00"
+        },
+        {
+          "title": "工作事项：组织团队建设活动，制定企业文化宣传方案，收集员工反馈",
+          "url": "https://www.ihr360.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 11,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T08:51:34+00:00"
+        },
+        {
+          "title": "工作事项：组织企业文化活动，推动团队建设",
+          "url": "https://www.zhipin.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 7,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T08:38:32+00:00"
+        },
+        {
+          "title": "工作事项：定期收集人力数据，进行分析并输出改进建议",
+          "url": "https://www.feishu.cn/product/people",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 19,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T08:51:34+00:00"
+        },
+        {
+          "title": "工作事项：组织绩效考核、薪酬调整等，确保制度落地",
+          "url": "https://page.dingtalk.com/wow/dingtalk/act/oa-hr",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 15,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T08:51:34+00:00"
+        },
+        {
+          "title": "工作事项：制定并实施招聘计划，确保招聘流程顺畅",
+          "url": "https://www.mokahr.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 21,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T08:51:34+00:00"
+        },
+        {
+          "title": "工作事项：定期进行组织盘点，提出优化方案并跟进实施效果",
+          "url": "https://www.beisen.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 21,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T08:51:34+00:00"
+        },
+        {
+          "title": "工作事项：收集并分析业务部门的需求，制定相应的人力资源解决方案",
+          "url": "https://www.xrxs.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 12,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T07:37:08+00:00"
+        }
+      ],
+      "python工程师": [
+        {
+          "title": "工作事项：生成结构化报告并提交给相关团队",
+          "url": "https://www.jetbrains.com.cn/idea/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:39:18+00:00"
+        },
+        {
+          "title": "工作事项：对用户反馈的问题进行初步排查与处理",
+          "url": "https://about.gitlab.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:39:18+00:00"
+        },
+        {
+          "title": "工作事项：负责指定网站的数据采集与爬虫程序的开发、维护工作",
+          "url": "https://prometheus.io/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:39:18+00:00"
+        },
+        {
+          "title": "工作事项：生成结构化报告并提交给相关团队",
+          "url": "https://www.jenkins.io/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:26:10+00:00"
+        },
+        {
+          "title": "工作事项：对用户反馈的问题进行初步排查与处理",
+          "url": "https://code.visualstudio.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:26:10+00:00"
+        },
+        {
+          "title": "工作事项：负责指定网站的数据采集与爬虫程序的开发、维护工作",
+          "url": "https://www.jetbrains.com/idea/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:26:10+00:00"
+        },
+        {
+          "title": "工作事项：生成结构化报告并提交给相关团队",
+          "url": "https://www.microsoft.com/zh-cn/microsoft-365",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:08:07+00:00"
+        },
+        {
+          "title": "工作事项：对用户反馈的问题进行初步排查与处理",
+          "url": "https://www.feishu.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:08:07+00:00"
+        },
+        {
+          "title": "工作事项：负责指定网站的数据采集与爬虫程序的开发、维护工作",
+          "url": "https://www.dingtalk.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-01T08:08:07+00:00"
+        }
+      ],
+      "java工程师": [
+        {
+          "title": "工作事项：协助完成数据库设计与SQL优化",
+          "url": "https://www.atlassian.com/software/jira",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://atlassian.com/software/confluence",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：编写和维护项目相关的技术文档",
+          "url": "https://www.microsoft.com/zh-cn/microsoft-365",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://www.jenkins.io/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://about.gitlab.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://github.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://www.jetbrains.com/idea/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://www.feishu.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://www.dingtalk.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：定期参与团队的代码审查和技术分享",
+          "url": "https://deepvseek.com.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T11:10:59+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://javabetter.cn/jvm/arthas.html",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T11:10:59+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://prometheus.io/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 3,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：编写和维护项目相关的技术文档",
+          "url": "https://www.gitbook.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 3,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://jenkins.io/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T11:10:59+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://code.visualstudio.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 5,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://arthas.aliyun.com/doc/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：编写和维护项目相关的技术文档",
+          "url": "https://app.diagrams.net/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://swagger.io/tools/swagger-ui/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://www.notion.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://www.atlassian.com/software/confluence",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 3,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:00:21+00:00"
+        },
+        {
+          "title": "工作事项：定期参与团队的代码审查和技术分享",
+          "url": "https://github.tw.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T08:54:58+00:00"
+        },
+        {
+          "title": "工作事项：定期参与团队的代码审查和技术分享",
+          "url": "https://gitlab.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 5,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://www.xitongzhijia.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T08:54:58+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://www.runoob.com/java/java-tutorial.html",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T08:54:58+00:00"
+        }
+      ]
+    },
+    "by_family": {
+      "软件工程师": [
+        {
+          "title": "工作事项：协助完成数据库设计与SQL优化",
+          "url": "https://www.atlassian.com/software/jira",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://github.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 3,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://atlassian.com/software/confluence",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：编写和维护项目相关的技术文档",
+          "url": "https://www.microsoft.com/zh-cn/microsoft-365",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://www.jenkins.io/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://about.gitlab.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://www.feishu.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://www.dingtalk.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 2,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：定期参与团队的代码审查和技术分享",
+          "url": "https://deepvseek.com.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T11:10:59+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://javabetter.cn/jvm/arthas.html",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T11:10:59+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://prometheus.io/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 3,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：编写和维护项目相关的技术文档",
+          "url": "https://www.gitbook.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 3,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://jenkins.io/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T11:10:59+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://code.visualstudio.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 5,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：参与核心功能模块的开发与测试",
+          "url": "https://www.jetbrains.com/idea/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 5,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-09T11:37:50+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://arthas.aliyun.com/doc/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：编写和维护项目相关的技术文档",
+          "url": "https://app.diagrams.net/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://swagger.io/tools/swagger-ui/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://www.notion.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 4,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：设计系统架构并编写设计文档",
+          "url": "https://www.atlassian.com/software/confluence",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 3,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:00:21+00:00"
+        },
+        {
+          "title": "工作事项：定期参与团队的代码审查和技术分享",
+          "url": "https://github.tw.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T08:54:58+00:00"
+        },
+        {
+          "title": "工作事项：定期参与团队的代码审查和技术分享",
+          "url": "https://gitlab.cn/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 5,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T12:11:37+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://www.xitongzhijia.com/",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T08:54:58+00:00"
+        },
+        {
+          "title": "工作事项：解决系统运行中的问题，保障系统稳定",
+          "url": "https://www.runoob.com/java/java-tutorial.html",
+          "blurb": "终稿 tools.md 引用的产品页",
+          "hits": 1,
+          "verified": true,
+          "source": "tools_delivery",
+          "last_at": "2026-09-08T08:54:58+00:00"
+        }
+      ]
+    },
+    "bad_urls": []
+  },
+  "events": [
+    {
+      "at": "2026-09-09T08:57:47+00:00",
+      "kind": "collect",
+      "detail": "java工程师 · 7 seeds · 14 queries"
+    },
+    {
+      "at": "2026-09-09T08:58:23+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 阿里 P7 能力水平解读（阿里云开发者社区） · verified=False"
+    },
+    {
+      "at": "2026-09-09T08:58:24+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 研发部绩效考核体系搭建（阿里云开发者社区） · verified=False"
+    },
+    {
+      "at": "2026-09-09T08:58:24+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · Java工程师岗位职责（猎聘岗位频道） · verified=False"
+    },
+    {
+      "at": "2026-09-09T08:58:24+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 软件开发KPI绩效考核怎么制定（蓝凌叮当） · verified=False"
+    },
+    {
+      "at": "2026-09-09T08:58:24+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 阿里 P6 与 P7 能力差异（芋道源码） · verified=False"
+    },
+    {
+      "at": "2026-09-09T08:58:24+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · Java开发工程师岗位说明（人人文库） · verified=False"
+    },
+    {
+      "at": "2026-09-09T08:58:24+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 人社部/工信部颁布计算机程序设计员等国家职业技能标准通知 · verified=False"
+    },
+    {
+      "at": "2026-09-09T09:03:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 阿里 P7 能力水平解读（阿里云开发者社区） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:03:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 研发部绩效考核体系搭建（阿里云开发者社区） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:03:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · Java工程师岗位职责（猎聘岗位频道） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:03:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 软件开发KPI绩效考核怎么制定（蓝凌叮当） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:03:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 阿里 P6 与 P7 能力差异（芋道源码） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:03:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · Java开发工程师岗位说明（人人文库） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:03:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 人社部/工信部颁布计算机程序设计员等国家职业技能标准通知 · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:13:24+00:00",
+      "kind": "collect",
+      "detail": "java工程师 · 7 seeds · 14 queries"
+    },
+    {
+      "at": "2026-09-09T09:14:00+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 阿里 P7 能力水平解读（阿里云开发者社区） · verified=False"
+    },
+    {
+      "at": "2026-09-09T09:14:00+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 研发部绩效考核体系搭建（阿里云开发者社区） · verified=False"
+    },
+    {
+      "at": "2026-09-09T09:14:00+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · Java工程师岗位职责（猎聘岗位频道） · verified=False"
+    },
+    {
+      "at": "2026-09-09T09:14:00+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 软件开发KPI绩效考核怎么制定（蓝凌叮当） · verified=False"
+    },
+    {
+      "at": "2026-09-09T09:14:00+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 阿里 P6 与 P7 能力差异（芋道源码） · verified=False"
+    },
+    {
+      "at": "2026-09-09T09:14:00+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · Java开发工程师岗位说明（人人文库） · verified=False"
+    },
+    {
+      "at": "2026-09-09T09:14:00+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 人社部/工信部颁布计算机程序设计员等国家职业技能标准通知 · verified=False"
+    },
+    {
+      "at": "2026-09-09T09:18:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 阿里 P7 能力水平解读（阿里云开发者社区） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:18:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 研发部绩效考核体系搭建（阿里云开发者社区） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:18:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · Java工程师岗位职责（猎聘岗位频道） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:18:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 软件开发KPI绩效考核怎么制定（蓝凌叮当） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:18:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 阿里 P6 与 P7 能力差异（芋道源码） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:18:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · Java开发工程师岗位说明（人人文库） · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:18:32+00:00",
+      "kind": "industry_seed",
+      "detail": "java工程师 · 人社部/工信部颁布计算机程序设计员等国家职业技能标准通知 · verified=True"
+    },
+    {
+      "at": "2026-09-09T09:24:33+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：编写核心业务系统的代码"
+    },
+    {
+      "at": "2026-09-09T09:24:33+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：编写核心业务系统的代码"
+    },
+    {
+      "at": "2026-09-09T09:24:33+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：协助完成数据库设计与SQL优化"
+    },
+    {
+      "at": "2026-09-09T09:24:33+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：协助完成数据库设计与SQL优化"
+    },
+    {
+      "at": "2026-09-09T09:24:33+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：协助完成数据库设计与SQL优化"
+    },
+    {
+      "at": "2026-09-09T11:37:50+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：编写核心业务系统的代码"
+    },
+    {
+      "at": "2026-09-09T11:37:50+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：编写核心业务系统的代码"
+    },
+    {
+      "at": "2026-09-09T11:37:50+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：协助完成数据库设计与SQL优化"
+    },
+    {
+      "at": "2026-09-09T11:37:50+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：协助完成数据库设计与SQL优化"
+    },
+    {
+      "at": "2026-09-09T11:37:50+00:00",
+      "kind": "tool_seed",
+      "detail": "java工程师 · 工作事项：协助完成数据库设计与SQL优化"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "description": "行业情报种子 URL（岗位职责/任职要求/验收KPI/职业标准/职级能力）。仅覆盖常见职业族；未收录的职业仍走「{职业名}+岗位职责/验收标准」全网检索，不会锁死在某一行业。",
+  "by_family": {
+    "软件工程师": [
+      {
+        "title": "Java工程师岗位职责与招聘要求（高校人才网）",
+        "url": "https://www.gaoxiaojob.com/bk_jobs/8muft6qs",
+        "blurb": "归纳 Java 工程师岗位职责与任职要求，可对照背调做行业能力画像。"
+      },
+      {
+        "title": "Java工程师岗位职责（猎聘岗位频道）",
+        "url": "https://www.liepin.com/gw/javagcs0660/",
+        "blurb": "公开岗位职责/工作内容归纳，用于成果标准与必做事项对照。"
+      },
+      {
+        "title": "高级Java工程师岗位说明书模板（三茅招聘）",
+        "url": "https://zhaopin.hrloo.com/hr/tools/jd/4",
+        "blurb": "含岗位职责与任职要求模板，可提炼验收与能力要求。"
+      },
+      {
+        "title": "Java开发工程师岗位说明（人人文库）",
+        "url": "https://www.renrendoc.com:8443/paper/531422254.html",
+        "blurb": "岗位说明文档：职责、联调、性能、文档与任职资格。"
+      },
+      {
+        "title": "软件开发KPI绩效考核怎么制定（蓝凌叮当）",
+        "url": "https://www.dingteam.com/article/596",
+        "blurb": "软件开发岗 KPI：交付、缺陷、接口可用性、评审通过率等验收向指标。"
+      },
+      {
+        "title": "研发部绩效考核体系搭建（阿里云开发者社区）",
+        "url": "https://developer.aliyun.com/article/1678524",
+        "blurb": "研发绩效维度与可量化指标设计，支撑成果标准与中间质检。"
+      },
+      {
+        "title": "技术部KPI绩效考核指标（OKR管理学院）",
+        "url": "https://www.pekhr.com/lib/13891.html",
+        "blurb": "技术部常见 KPI：按时交付、缺陷率、可用性、响应等。"
+      },
+      {
+        "title": "人社部/工信部颁布计算机程序设计员等国家职业技能标准通知",
+        "url": "https://www.rcgov.cn/zcfg/148.html",
+        "blurb": "国家职业技能标准颁布通知（含计算机程序设计员），行业官方依据。"
+      },
+      {
+        "title": "计算机程序设计员国家职业标准简介（院校转载）",
+        "url": "https://www.jscfa.edu.cn/jxjyc/2023/0320/c1871a26494/page.htm",
+        "blurb": "职业定义、等级与鉴定要求，用于职业标准章节。"
+      },
+      {
+        "title": "阿里 P7 能力水平解读（阿里云开发者社区）",
+        "url": "https://developer.aliyun.com/article/1358891",
+        "blurb": "大厂职级能力模型（P6/P7），对照进阶技能与影响力要求。"
+      },
+      {
+        "title": "阿里 P6 与 P7 能力差异（芋道源码）",
+        "url": "https://www.iocoder.cn/Fight/Ali-is-the-main-difference-between-P6-and-P7/",
+        "blurb": "职级能力差异：执行者 vs 专家/带队，支撑能力模型归纳。"
+      }
+    ],
+    "人力资源": [
+      {
+        "title": "中华人民共和国劳动法（市场监管总局转载全文）",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+        "blurb": "劳动法全文：劳动合同、工时休假、社保福利、培训与争议处理底线。"
+      },
+      {
+        "title": "中华人民共和国劳动合同法（市场监管总局转载全文）",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "blurb": "劳动合同订立/履行/变更/解除全文，入离职与异动合规依据。"
+      },
+      {
+        "title": "中华人民共和国社会保险法（市场监管总局转载全文）",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e81d115419b4463ebb59ec46467fb136.html",
+        "blurb": "五险制度与缴费义务，人事手续合规依据。"
+      },
+      {
+        "title": "人力资源市场暂行条例（市场监管总局转载全文）",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d0f9fd2e7dcb4286a55c87b188f38bbc.html",
+        "blurb": "招聘信息真实合法、订立合同与办理社保等市场规范；行业行政法规。"
+      },
+      {
+        "title": "职工带薪年休假条例（中国人大网）",
+        "url": "http://www.npc.gov.cn/npc/c2/c188/c217/201905/t20190522_30040.html",
+        "blurb": "年休假天数与应休未休300%报酬等休假规范，员工关系合规。"
+      },
+      {
+        "title": "中华人民共和国劳动争议调解仲裁法（中国人大网）",
+        "url": "http://www.npc.gov.cn/c2986/c4488/201905/t20190523_48437.html",
+        "blurb": "劳动争议调解/仲裁程序与时效，员工关系升级路径规范。"
+      },
+      {
+        "title": "人社部办公厅颁布企业人力资源管理师等16个国家职业技能标准的通知",
+        "url": "https://www.gov.cn/zhengce/zhengceku/2019-09/26/content_5433627.htm",
+        "blurb": "官方颁布通知：职业编码含企业人力资源管理师（4-07-03-04）。"
+      },
+      {
+        "title": "企业人力资源管理师（劳务派遣管理员）国家职业技能标准 PDF",
+        "url": "https://rsj.gz.gov.cn/attachment/7/7724/7724433/9989710.pdf",
+        "blurb": "国家职业技能标准附件：等级与劳动法/劳动合同法等相关知识要求。"
+      },
+      {
+        "title": "人力资源招聘专员岗位职责（猎聘）",
+        "url": "https://www.liepin.com/gw/rlzyzpzy/",
+        "blurb": "招聘全流程职责频道（非新闻）：筛选、面试、入职、渠道。"
+      },
+      {
+        "title": "招聘专员岗位说明书标准范本（有招）",
+        "url": "https://youzhao.io/zhize/162",
+        "blurb": "岗位说明书范本：需求、渠道、面试、入职、招聘分析报告。"
+      },
+      {
+        "title": "人力资源KPI指标体系与实施（i人事·实践参考）",
+        "url": "https://blog.ihr360.com/p/84379/",
+        "blurb": "实践向 KPI 口径（非国标）：招聘周期/完成率、培训覆盖、满意度等。"
+      }
+    ],
+    "产品经理": [
+      {
+        "title": "产品经理岗位职责（猎聘岗位频道）",
+        "url": "https://www.liepin.com/gw/chanpinjingli/",
+        "blurb": "公开产品经理职责与任职要求，对照背调做能力画像。"
+      },
+      {
+        "title": "产品经理岗位说明书模板（三茅招聘）",
+        "url": "https://zhaopin.hrloo.com/hr/tools/jd/6",
+        "blurb": "含需求分析、原型、迭代、数据等职责，可提炼验收标准。"
+      },
+      {
+        "title": "产品经理 KPI 怎么定（蓝凌叮当）",
+        "url": "https://www.dingteam.com/article/597",
+        "blurb": "产品岗 KPI：需求交付、用户增长、留存等验收向指标。"
+      },
+      {
+        "title": "互联网产品经理能力模型（阿里云开发者社区）",
+        "url": "https://developer.aliyun.com/article/1358892",
+        "blurb": "职级能力：用户研究、数据分析、项目管理与跨部门协作。"
+      },
+      {
+        "title": "高级产品经理岗位说明书模板（三茅招聘）",
+        "url": "https://zhaopin.hrloo.com/hr/tools/jd/7",
+        "blurb": "含路线图、商业化、数据驱动决策等进阶职责。"
+      },
+      {
+        "title": "产品部 KPI 绩效考核指标（OKR管理学院）",
+        "url": "https://www.pekhr.com/lib/13893.html",
+        "blurb": "产品岗常见 KPI：版本准时率、核心指标达成、需求变更率等。"
+      }
+    ],
+    "会计": [
+      {
+        "title": "会计岗位职责（猎聘岗位频道）",
+        "url": "https://www.liepin.com/gw/kuaiji/",
+        "blurb": "公开会计岗位职责与任职要求，用于成果标准对照。"
+      },
+      {
+        "title": "财务会计岗位说明书模板（三茅招聘）",
+        "url": "https://zhaopin.hrloo.com/hr/tools/jd/8",
+        "blurb": "含账务处理、报表、税务申报等职责与任职资格。"
+      },
+      {
+        "title": "财务 KPI 考核指标设计（蓝凌叮当）",
+        "url": "https://www.dingteam.com/article/598",
+        "blurb": "财务岗 KPI：报表准确率、关账时效、审计配合等。"
+      },
+      {
+        "title": "会计专业技术人员继续教育规定（人社政策解读）",
+        "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zwgk/zcwj/zcjd/201805/t20180524_289876.html",
+        "blurb": "继续教育与职业标准要求，用于能力模型章节。"
+      },
+      {
+        "title": "企业会计准则——基本准则（财政部）",
+        "url": "https://www.mof.gov.cn/gp/zhengcefabu/201402/t20140226_1051234.htm",
+        "blurb": "国家会计准则依据，用于合规验收与必做事项。"
+      },
+      {
+        "title": "财务部 KPI 绩效考核指标（OKR管理学院）",
+        "url": "https://www.pekhr.com/lib/13894.html",
+        "blurb": "财务岗常见 KPI：预算执行率、费用控制、税务合规等。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>睿览 · 圆桌 · 人力资源</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #e7edf2;
+      --bg-wash: #dfe8ef;
+      --paper: #fbfcfd;
+      --paper-2: #f3f6f9;
+      --ink: #1b2533;
+      --muted: #5f6c7b;
+      --line: #d3dbe5;
+      --line-soft: #e4eaf1;
+      --accent: #0b2b4a;
+      
+      --accent-soft: #ebf1f8;
+      --accent-deep: #071e36;
+      --amber: #9a7340;
+      --amber-soft: #f5efe4;
+      --wait: #3d6f8f;
+      --wait-bg: #e8f1f6;
+      --danger: #b55a5a;
+      --danger-bg: #f8ecec;
+      --ok: #3d6b5a;
+      --ok-bg: #e8f1ec;
+      --shadow: 0 10px 30px rgba(27, 37, 51, 0.06);
+      --radius: 14px;
+      --radius-sm: 10px;
+      --font-display: "Fraunces", "Songti SC", serif;
+      --font-body: "Source Sans 3", "PingFang SC", "Microsoft YaHei", sans-serif;
+      --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font: 15px/1.55 var(--font-body);
+      color: var(--ink);
+      background:
+        radial-gradient(900px 420px at 8% -8%, rgba(11,43,74,0.10), transparent 55%),
+        radial-gradient(700px 380px at 100% 0%, rgba(154,115,64,0.07), transparent 50%),
+        linear-gradient(180deg, var(--bg-wash), var(--bg));
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .app {
+      flex: 1 1 auto; min-height: 0;
+      display: flex; flex-direction: column;
+      max-width: 1540px; width: 100%; margin: 0 auto;
+      padding: 14px 16px 12px;
+    }
+    header.top {
+      flex: 0 0 auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 16px 10px;
+      margin-bottom: 12px;
+    }
+    .top-bar {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 16px; flex-wrap: wrap; margin-bottom: 10px;
+    }
+    .brand-row { display: flex; align-items: center; gap: 16px; min-width: 0; }
+    .brand-logo {
+      height: 48px; width: auto; max-width: min(210px, 46vw);
+      flex: 0 0 auto; object-fit: contain; display: block;
+    }
+    .brand-mark { display: none !important; }
+    .brand-text { min-width: 0; padding-left: 16px; border-left: 1px solid rgba(11,43,74,0.12); }
+    .brand-kicker {
+      margin: 0;
+      font-size: 12px; letter-spacing: 0.08em; text-transform: none;
+      color: #3d6f8f; font-weight: 700;
+    }
+    h1 {
+      margin: 2px 0 0;
+      font-family: var(--font-display);
+      font-size: 26px; font-weight: 650; letter-spacing: 0.01em;
+      color: var(--ink); line-height: 1.15;
+    }
+    .top-aside { text-align: right; min-width: 200px; }
+    .stage-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 12px; border-radius: 999px;
+      background: var(--accent-soft); color: var(--accent-deep);
+      font-size: 12.5px; font-weight: 650; border: 1px solid #c5d0e0;
+      margin-bottom: 6px;
+    }
+    .stage-chip::before {
+      content: ""; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--accent); box-shadow: 0 0 0 3px rgba(11,43,74,0.18);
+    }
+    .meta { color: var(--muted); font-size: 12.5px; margin: 0; }
+    .meta strong { color: var(--ink); font-weight: 650; }
+
+    .flow-bar {
+      display: flex; flex-wrap: nowrap; gap: 6px; margin: 0 0 10px; padding: 0;
+      list-style: none; overflow-x: auto; align-items: stretch;
+    }
+    .flow-group {
+      flex: 0 0 auto; text-align: left;
+      font-size: 11px; line-height: 1.35; padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      color: var(--muted); background: var(--paper-2);
+      transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+      max-width: 168px;
+    }
+    .flow-num {
+      display: inline-block; font-size: 10px; font-weight: 700;
+      color: var(--accent); margin-right: 4px; font-family: var(--font-mono);
+    }
+    .flow-group-title {
+      display: block; font-size: 12.5px; font-weight: 650;
+      color: var(--ink); margin-bottom: 0; white-space: nowrap;
+    }
+    .flow-substeps {
+      display: none; flex-wrap: wrap; gap: 4px; margin-top: 8px;
+    }
+    .flow-group.on .flow-substeps { display: flex; }
+    .flow-group.on { max-width: 320px; }
+    .flow-sub {
+      display: inline-flex; flex-direction: column; align-items: flex-start;
+      font-size: 11px; line-height: 1.25;
+      padding: 4px 7px; border-radius: 8px;
+      border: 1px solid var(--line-soft); color: var(--muted); background: var(--paper);
+      white-space: normal; max-width: 92px; min-width: 68px;
+    }
+    .flow-sub-agent { display: block; font-size: 11px; font-weight: 650; color: inherit; }
+    .flow-sub-summary {
+      display: block; font-size: 9.5px; line-height: 1.3;
+      color: var(--muted); margin-top: 2px;
+    }
+    .flow-group.done {
+      border-color: var(--line); background: #eef2f6;
+    }
+    .flow-group.done .flow-group-title { color: #4a5a6a; }
+    .flow-group.done .flow-num { color: #6a7a8a; }
+    .flow-group.on {
+      border-color: var(--accent);
+      background: linear-gradient(165deg, #fff, var(--accent-soft));
+      box-shadow: 0 0 0 1px rgba(11,43,74,0.18), var(--shadow);
+    }
+    .flow-group.on .flow-group-title { color: var(--accent-deep); }
+    .flow-group.todo { opacity: 0.55; }
+    .flow-sub.done { border-color: #c5d0dc; color: var(--ok); background: #f3f6fa; }
+    .flow-sub.on {
+      border-color: var(--accent); color: var(--accent-deep); background: #fff;
+    }
+    .flow-sub.on .flow-sub-summary { color: #4a6178; }
+
+    .wait-banner {
+      display: none; margin: 0 0 10px; padding: 11px 14px; border-radius: 12px;
+      border: 1px solid #b9d3e3; background: var(--wait-bg); color: #24485c;
+      font-size: 13.5px; line-height: 1.45; font-weight: 600;
+    }
+    .wait-banner.on { display: block; }
+    .alert-bar {
+      display: none; margin: 0 0 10px; padding: 10px 12px; border-radius: 12px;
+      border: 1px solid #e0b4b4; background: var(--danger-bg); color: #7a3535; font-size: 13px;
+    }
+    .alert-bar.on { display: block; }
+    .alert-bar.warn { border-color: #e0d0a8; background: #f8f3e6; color: #6a5424; }
+
+    .workspace {
+      flex: 1 1 auto; min-height: 0;
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 12px;
+    }
+    .rail {
+      min-height: 0; overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 12px 10px;
+      display: flex; flex-direction: column;
+    }
+    .rail-label {
+      font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--muted); font-weight: 700; margin: 0 0 8px 4px;
+    }
+    .roster {
+      display: flex; flex-direction: column; gap: 7px;
+      overflow-y: auto; min-height: 0; flex: 1 1 auto;
+      padding-right: 2px;
+    }
+    .seat {
+      background: var(--paper-2); border: 1px solid var(--line-soft);
+      border-radius: 11px; padding: 8px 10px;
+      transition: border-color .2s ease, background .2s ease, transform .15s ease;
+    }
+    .seat:hover { border-color: #bcc8d6; transform: translateY(-1px); }
+    .seat header {
+      font-size: 12px; color: var(--muted); margin-bottom: 2px;
+      font-weight: 650; letter-spacing: 0.01em;
+    }
+    .seat p { margin: 0; font-size: 12px; line-height: 1.35; color: #3a4656; }
+    .seat.working {
+      border-color: #b7c8dc; background: var(--accent-soft);
+    }
+    .seat.working header { color: var(--accent-deep); }
+    .seat.working header::before {
+      content: ""; display: inline-block; width: 7px; height: 7px;
+      border-radius: 50%; background: var(--accent); margin-right: 6px;
+      box-shadow: 0 0 0 0 var(--accent); animation: pulse 1.5s infinite;
+    }
+    .seat.queued { border-color: #e0c998; background: #f8f2e6; }
+    .seat.queued header { color: var(--amber); }
+    .seat.waiting { border-color: #b9d3e3; background: var(--wait-bg); }
+    .seat.waiting header { color: var(--wait); }
+    .seat.waiting header::before {
+      content: ""; display: inline-block; width: 7px; height: 7px;
+      border-radius: 50%; background: var(--wait); margin-right: 6px;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(11,43,74,0.45); }
+      70% { box-shadow: 0 0 0 8px rgba(11,43,74,0); }
+      100% { box-shadow: 0 0 0 0 rgba(11,43,74,0); }
+    }
+
+    .stage-shell {
+      min-height: 0; min-width: 0;
+      display: flex; flex-direction: column;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    nav.tabs {
+      display: flex; gap: 2px; padding: 8px 12px 0;
+      border-bottom: 1px solid var(--line-soft);
+      background: linear-gradient(180deg, #fff, var(--paper-2));
+      flex: 0 0 auto;
+    }
+    .tab {
+      background: transparent; border: 0; border-bottom: 2px solid transparent;
+      color: var(--muted); padding: 10px 14px; cursor: pointer;
+      font: 600 14px/1.2 var(--font-body);
+      transition: color .15s ease, border-color .15s ease;
+    }
+    .tab:hover { color: var(--ink); }
+    .tab.on { color: var(--accent-deep); border-bottom-color: var(--accent); }
+
+    main {
+      flex: 1 1 auto; min-height: 0;
+      padding: 12px 14px 14px;
+      display: flex; flex-direction: column;
+    }
+    .panel { display: none; }
+    .panel.on { display: block; overflow-y: auto; min-height: 0; flex: 1 1 auto; }
+    #panel-talk.on {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.9fr);
+      gap: 12px;
+      align-items: stretch;
+      flex: 1 1 auto; min-height: 0; height: 100%;
+      overflow: hidden;
+    }
+    #panel-talk.on:not(.has-dock) {
+      grid-template-columns: 1fr;
+    }
+    #panel-talk.on:not(.has-dock) #dock { display: none; }
+    .talk-col {
+      min-width: 0; min-height: 0;
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    #talk-thread {
+      min-width: 0; min-height: 0;
+      overflow-y: auto;
+      padding: 2px 4px 10px 0;
+      scroll-behavior: smooth;
+      flex: 1 1 auto;
+    }
+    .card {
+      background: var(--paper-2);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px; margin-bottom: 10px;
+      animation: rise .25s ease both;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: none; }
+    }
+    .card.you {
+      border-color: #c5d0e0;
+      background: linear-gradient(160deg, #fff, var(--accent-soft));
+    }
+    .card header {
+      margin-bottom: 6px;
+      font-family: var(--font-display);
+      font-size: 15px; font-weight: 650;
+    }
+    .to { color: var(--muted); font-weight: 500; margin-left: 8px; font-family: var(--font-body); font-size: 12.5px; }
+    pre {
+      margin: 0; white-space: pre-wrap; word-break: break-word;
+      font: 13.5px/1.55 var(--font-mono); color: #2a3544;
+    }
+    .empty, .talk-empty { color: var(--muted); }
+    code { font-family: var(--font-mono); }
+
+    #talk-composer {
+      position: relative; z-index: 1;
+      background: #fff;
+      border: 1px solid #c7d3df;
+      margin: 0; flex: 0 0 auto;
+      box-shadow: 0 -6px 20px rgba(27,37,51,0.04);
+    }
+    #dock {
+      position: relative; z-index: 5;
+      min-width: 0; min-height: 0;
+      height: 100%;
+      overflow-y: auto;
+      display: flex; flex-direction: column; gap: 10px;
+      padding: 0 0 2px 2px;
+    }
+    #dock .upload-box { margin: 0; }
+
+    .ingest-progress {
+      display: none; margin: 0 0 10px; padding: 12px 14px; border-radius: 12px;
+      border: 1px solid #b7c8dc; background: linear-gradient(165deg, #fff, var(--accent-soft));
+      font-size: 13px; color: #24384f; box-shadow: var(--shadow);
+    }
+    .ingest-progress.on { display: block; }
+    .ingest-progress.done {
+      border-color: #c5d0dc; background: var(--ok-bg); color: var(--ok);
+    }
+    .ingest-progress .ingest-head {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      font-weight: 700; margin-bottom: 6px;
+    }
+    .ingest-progress .ingest-kind {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 700;
+      background: #fff; border: 1px solid #c5d0e0; color: var(--accent-deep);
+    }
+    .ingest-progress .ingest-kind::before {
+      content: ""; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--accent); animation: pulse 1.4s infinite;
+    }
+    .ingest-progress.done .ingest-kind::before { animation: none; background: var(--ok); }
+    .ingest-progress .bar {
+      height: 8px; border-radius: 999px; background: #d8e2ee; margin: 8px 0;
+      overflow: hidden;
+    }
+    .ingest-progress .bar > i {
+      display: block; height: 100%; background: var(--accent); width: 0%;
+      transition: width .25s ease;
+    }
+    .ingest-progress .bar.indeterminate > i {
+      width: 35% !important;
+      animation: ingest-slide 1.2s ease-in-out infinite;
+    }
+    @keyframes ingest-slide {
+      0% { transform: translateX(-120%); }
+      100% { transform: translateX(320%); }
+    }
+    .ingest-progress ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); }
+    .ingest-progress li.ok { color: var(--ok); }
+    .ingest-progress li.fail { color: var(--danger); }
+    .ingest-progress li.run { color: var(--ink); }
+    .ingest-progress .ingest-current {
+      font-size: 12.5px; color: #3d556e; margin-top: 2px;
+    }
+
+    #talk-composer textarea, .upload-box textarea,
+    .upload-box input[type="url"], .upload-box input[type="text"],
+    .upload-box input[type="file"] {
+      width: 100%;
+      background: #fff; color: var(--ink);
+      border: 1px solid var(--line); border-radius: 9px;
+      padding: 10px 12px; font: inherit;
+      transition: border-color .15s ease, box-shadow .15s ease;
+    }
+    #talk-composer textarea { min-height: 78px; resize: vertical; }
+    #talk-composer textarea:focus, .upload-box textarea:focus,
+    .upload-box input:focus {
+      outline: none; border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(11,43,74,0.16);
+    }
+    #talk-composer .row, .upload-box .row {
+      display: flex; gap: 8px; align-items: center; margin-top: 8px; flex-wrap: wrap;
+    }
+    button, #talk-composer button, .upload-box button {
+      background: var(--accent); color: #fff; border: 0; border-radius: 9px;
+      padding: 8px 14px; font: 650 13.5px/1.2 var(--font-body); cursor: pointer;
+      transition: filter .15s ease, transform .15s ease, background .15s ease;
+    }
+    button:hover, #talk-composer button:hover { filter: brightness(1.05); }
+    button:active { transform: translateY(1px); }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+    button.secondary,
+    #talk-composer button.secondary,
+    .upload-box button.secondary,
+    .duty-box button.secondary {
+      background: #fff; border: 1px solid #b7c4d2; color: #334155;
+    }
+    button.secondary:hover,
+    #talk-composer button.secondary:hover,
+    .upload-box button.secondary:hover,
+    .duty-box button.secondary:hover {
+      border-color: var(--accent); color: var(--accent-deep); filter: none;
+    }
+    button.secondary.danger,
+    #talk-composer button.secondary.danger {
+      background: var(--danger-bg); border-color: #e0b4b4; color: #8a3d3d;
+    }
+    button.secondary.danger:hover,
+    #talk-composer button.secondary.danger:hover {
+      border-color: var(--danger); color: #6e2c2c;
+    }
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+    button:focus:not(:focus-visible),
+    .tab:focus:not(:focus-visible) { outline: none; }
+
+    .hint { font-size: 12.5px; color: var(--muted); }
+    .stage-hint {
+      font-size: 12.5px; color: var(--accent-deep); margin: 0 0 8px; font-weight: 650;
+    }
+    .upload-box, .duty-box {
+      margin-top: 0; padding: 13px 14px; border-radius: var(--radius-sm);
+      border: 1px solid var(--line); background: var(--paper-2);
+    }
+    .upload-box header, .duty-box header {
+      font-family: var(--font-display);
+      font-weight: 650; margin-bottom: 6px; color: var(--ink); font-size: 15px;
+    }
+    .duty-box { border-color: #c5d0e0; background: linear-gradient(165deg, #fff, var(--accent-soft)); }
+    .duty-box header { color: var(--accent-deep); }
+    .up-list { margin: 8px 0 0; padding-left: 18px; font-size: 12.5px; color: var(--muted); }
+    .file-list { margin: 0 0 14px; }
+    .file-card, .file-item {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 10px; margin-bottom: 10px; padding: 12px 14px;
+      background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius-sm);
+    }
+    .file-meta { display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1; }
+    .file-name { font-size: 14px; color: var(--accent-deep); word-break: break-all; font-weight: 650; }
+    .file-time, .file-agent { font-size: 12px; color: var(--muted); }
+    .file-actions { display: flex; gap: 8px; flex-shrink: 0; }
+    .file-hint { margin: 0 0 10px; font-size: 13px; color: #3d556e; }
+    .empty-files { padding: 16px; border: 1px dashed var(--line); border-radius: var(--radius-sm); color: var(--muted); }
+    a.file {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #fff; border: 1px solid #b7c4d2; color: var(--accent-deep);
+      text-decoration: none; border-radius: 8px; padding: 7px 11px; font-size: 13px; font-weight: 600;
+      transition: border-color .15s ease, background .15s ease;
+    }
+    a.file.open::before { content: "↗ "; }
+    a.file:not(.open)::before { content: "⬇ "; }
+    a.file:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+    .duty-list-panel {
+      margin-top: 12px; padding-top: 10px; border-top: 1px solid #c5d0e0;
+    }
+    .duty-list-head {
+      font-size: 13px; color: var(--accent-deep); margin-bottom: 8px; font-weight: 700;
+    }
+    .duty-list {
+      display: flex; flex-direction: column; gap: 8px;
+      max-height: 280px; overflow-y: auto;
+    }
+    .duty-item {
+      border: 1px solid var(--line); border-radius: 9px; background: #fff;
+      padding: 8px 10px;
+    }
+    .duty-item-top {
+      display: flex; align-items: flex-start; gap: 8px; justify-content: space-between;
+    }
+    .duty-item-meta { min-width: 0; flex: 1; }
+    .duty-item-title { font-size: 13px; color: var(--accent-deep); font-weight: 700; }
+    .duty-item-preview {
+      margin: 4px 0 0; font-size: 12px; color: var(--muted);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .duty-item-full {
+      display: none; margin-top: 8px; padding: 8px; border-radius: 6px;
+      background: var(--paper-2); border: 1px solid var(--line);
+      font-size: 12px; color: #2a3544; white-space: pre-wrap; max-height: 180px; overflow-y: auto;
+      font-family: var(--font-mono);
+    }
+    .duty-item.open .duty-item-full { display: block; }
+    .duty-item.open .duty-item-preview { display: none; }
+    .duty-item-actions { display: flex; gap: 6px; flex-shrink: 0; }
+    .duty-item-actions button { padding: 4px 8px; font-size: 12px; }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-thumb { background: #c5d0dc; border-radius: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .seat.working header::before,
+      .ingest-progress .ingest-kind::before,
+      .ingest-progress .bar.indeterminate > i { animation: none; }
+      .flow-group, .seat, .card, button, a.file { transition: none !important; }
+    }
+    @media (max-width: 1100px) {
+      .workspace { grid-template-columns: 1fr; }
+      .rail {
+        max-height: 118px; padding: 8px 10px;
+      }
+      .rail-label { margin-bottom: 6px; }
+      .roster {
+        flex-direction: row; overflow-x: auto; overflow-y: hidden;
+        gap: 6px;
+      }
+      .seat {
+        min-width: 128px; max-width: 168px; flex: 0 0 auto; padding: 6px 8px;
+      }
+      .seat p {
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      }
+      header.top { padding: 10px 12px 8px; margin-bottom: 10px; }
+      .flow-group { padding: 6px 8px; }
+      .flow-group.on { max-width: 250px; }
+      .wait-banner { margin-bottom: 6px; padding: 9px 12px; font-size: 13px; }
+    }
+    @media (max-width: 960px) {
+      #panel-talk.on {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(34vh, 1fr) minmax(220px, 40vh);
+        gap: 10px;
+      }
+      #panel-talk.on.has-dock #dock { display: flex; }
+      h1 { font-size: 22px; }
+      .top-aside { text-align: left; width: 100%; }
+      .app { padding: 10px; }
+    }
+  
+/* —— 睿览 skin —— */
+:root {
+  --bg: #e9eef4;
+  --bg-wash: #f2f5f9;
+  --paper: #fcfdff;
+  --paper-2: #f4f7fb;
+  --ink: #132033;
+  --muted: #5a6a7c;
+  --line: #d5dde8;
+  --line-soft: #e6ecf3;
+  --accent: #0b2b4a;
+  --accent-soft: #ebf1f8;
+  --accent-deep: #071e36;
+  --amber: #9a7340;
+  --amber-soft: #f7f1e7;
+  --wait: #3d6f8f;
+  --wait-bg: #eaf3f8;
+  --shadow: 0 12px 36px rgba(11, 43, 74, 0.07);
+  --shadow-soft: 0 2px 10px rgba(11, 43, 74, 0.04);
+  --radius: 16px;
+  --radius-sm: 12px;
+  --font-display: "Newsreader", "Songti SC", "Noto Serif SC", serif;
+  --font-body: "Figtree", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+body {
+  font: 15px/1.55 var(--font-body);
+  background:
+    radial-gradient(1100px 480px at 0% -10%, rgba(11,43,74,0.10), transparent 58%),
+    radial-gradient(800px 420px at 100% 0%, rgba(61,111,143,0.08), transparent 52%),
+    linear-gradient(180deg, var(--bg-wash) 0%, var(--bg) 55%, #e4eaf1 100%);
+  letter-spacing: 0.005em;
+}
+.app { padding: 16px 18px 14px; gap: 0; }
+
+header.top {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.98), rgba(252,253,255,0.94));
+  border: 1px solid rgba(213,221,232,0.95);
+  box-shadow: var(--shadow-soft), var(--shadow);
+  padding: 16px 18px 12px;
+  margin-bottom: 14px;
+  animation: rolen-header-in .45s ease both;
+}
+header.top::before {
+  content: "";
+  position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background: linear-gradient(90deg, #071e36 0%, #0b2b4a 42%, #3d6f8f 100%);
+}
+.top-bar { margin-bottom: 12px; align-items: center; }
+
+.brand-row { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.brand-logo {
+  height: 48px; width: auto; max-width: min(210px, 46vw);
+  flex: 0 0 auto; object-fit: contain; display: block;
+  filter: drop-shadow(0 1px 0 rgba(255,255,255,0.4));
+}
+.brand-mark { display: none !important; }
+.brand-text {
+  min-width: 0;
+  padding-left: 16px;
+  border-left: 1px solid rgba(11,43,74,0.12);
+}
+.brand-kicker {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 12px; letter-spacing: 0.08em; text-transform: none;
+  color: #3d6f8f; font-weight: 700;
+}
+h1 {
+  margin: 3px 0 0;
+  font-family: var(--font-display);
+  font-size: 28px; font-weight: 600; letter-spacing: -0.01em;
+  color: var(--accent-deep); line-height: 1.12;
+}
+
+.stage-chip {
+  border-radius: 999px;
+  background: linear-gradient(180deg, #fff, var(--accent-soft));
+  border: 1px solid #c8d4e4;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+  padding: 7px 13px;
+}
+.meta { font-size: 12px; letter-spacing: 0.01em; }
+
+.flow-bar { gap: 8px; margin: 0 0 12px; padding-bottom: 2px; }
+.flow-group {
+  border-radius: 13px;
+  padding: 9px 11px;
+  background: rgba(244,247,251,0.9);
+  box-shadow: none;
+}
+.flow-group.on {
+  border-color: transparent;
+  background:
+    linear-gradient(165deg, #ffffff 0%, var(--accent-soft) 100%);
+  box-shadow:
+    0 0 0 1px rgba(11,43,74,0.18),
+    0 8px 20px rgba(11,43,74,0.08);
+  position: relative;
+}
+.flow-group.on::before {
+  content: "";
+  position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #0b2b4a, #3d6f8f);
+}
+.flow-group.done { background: #eef2f7; }
+.flow-num {
+  font-variant-numeric: tabular-nums;
+  color: #3d6f8f;
+}
+.flow-group.on .flow-num { color: var(--accent); }
+
+.wait-banner {
+  border-radius: 13px;
+  border-color: #b7cede;
+  background: linear-gradient(135deg, #eef6fb, var(--wait-bg));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+}
+
+.rail, .stage-shell {
+  border-color: rgba(213,221,232,0.95);
+  box-shadow: var(--shadow-soft);
+}
+.rail-label {
+  letter-spacing: 0.12em;
+  color: #6a7a8c;
+}
+.seat {
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff, var(--paper-2));
+}
+.seat.working {
+  border-color: #b7c8dc;
+  background: linear-gradient(165deg, #fff, var(--accent-soft));
+}
+.seat:hover {
+  border-color: #aebcd0;
+  box-shadow: 0 4px 12px rgba(11,43,74,0.06);
+}
+
+nav.tabs {
+  background: linear-gradient(180deg, #fff 0%, #f6f8fb 100%);
+  padding: 10px 14px 0;
+}
+.tab {
+  border-radius: 10px 10px 0 0;
+  letter-spacing: 0.01em;
+}
+.tab.on {
+  color: var(--accent-deep);
+  border-bottom-color: var(--accent);
+  background: linear-gradient(180deg, rgba(11,43,74,0.04), transparent);
+}
+
+.card {
+  border-radius: 13px;
+  background: linear-gradient(180deg, #fff, var(--paper-2));
+  box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+}
+.card.you {
+  border-color: #c2d0e2;
+  background: linear-gradient(155deg, #ffffff 0%, #eef3f9 100%);
+}
+.card header {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+#talk-composer {
+  border-radius: 14px;
+  border: 1px solid #c7d3e0;
+  box-shadow: 0 -4px 24px rgba(11,43,74,0.05);
+  background: linear-gradient(180deg, #fff, #fafcfe);
+  padding: 12px 12px 10px;
+}
+button, #talk-composer button, .upload-box button {
+  border-radius: 10px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.18) inset;
+}
+button:not(.secondary):not(.tab),
+#talk-composer button:not(.secondary),
+.upload-box button:not(.secondary) {
+  background: linear-gradient(180deg, #14385c 0%, #0b2b4a 100%);
+}
+button:not(.secondary):hover,
+#talk-composer button:not(.secondary):hover {
+  filter: brightness(1.08);
+}
+button.secondary,
+#talk-composer button.secondary,
+.upload-box button.secondary,
+.duty-box button.secondary {
+  border-radius: 10px;
+  border-color: #b8c6d6;
+  background: #fff;
+}
+
+.duty-box, .upload-box {
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+}
+.duty-box {
+  border-color: #c5d2e3;
+  background: linear-gradient(165deg, #fff, var(--accent-soft));
+}
+.upload-box header, .duty-box header {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.ingest-progress {
+  border-color: #b7c8dc;
+  background: linear-gradient(165deg, #fff, var(--accent-soft));
+  color: #24384f;
+}
+.ingest-progress .bar { background: #d8e2ee; }
+.ingest-progress .ingest-current { color: #3d556e; }
+.file-hint { color: #3d556e; }
+
+::-webkit-scrollbar-thumb {
+  background: #b8c4d4;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+@keyframes rolen-header-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  header.top { animation: none; }
+}
+@media (max-width: 960px) {
+  h1 { font-size: 23px; }
+  .brand-logo { height: 40px; }
+}
+
+  </style>
+</style>
+</head>
+<body>
+  <div class="app">
+  <header class="top">
+    <div class="top-bar">
+      <div class="brand-row">
+        <img class="brand-logo" src="data:image/jpeg;base64,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" alt="睿览 rolen" width="168" height="56" />
+        <div class="brand-text">
+          <p class="brand-kicker">职业工作手册 · 圆桌</p>
+          <h1>人力资源</h1>
+        </div>
+      </div>
+      <div class="top-aside">
+        <div class="stage-chip" id="stage-chip">等待用户给出职业</div>
+        <div class="meta">尚未设定职业（直接说职业名即可） · 上一发言 — · 更新 15:36:41 · 换职业发「换职业 XXX」</div>
+      </div>
+    </div>
+    <ol class="flow-bar" id="flow-steps"><li class="flow-group on"><span class="flow-group-title"><span class="flow-num">1</span>定职业建库</span><div class="flow-substeps"><span class="flow-sub on"><span class="flow-sub-agent">你</span><span class="flow-sub-summary">说职业名</span></span><span class="flow-sub todo"><span class="flow-sub-agent">主 agent</span><span class="flow-sub-summary">判定并点兵</span></span><span class="flow-sub todo"><span class="flow-sub-agent">知识库</span><span class="flow-sub-summary">建库骨架</span></span></div></li><li class="flow-group todo"><span class="flow-group-title"><span class="flow-num">2</span>职业背调</span><div class="flow-substeps"><span class="flow-sub todo"><span class="flow-sub-agent">主 agent</span><span class="flow-sub-summary">派职业背调</span></span><span class="flow-sub todo"><span class="flow-sub-agent">职业背调</span><span class="flow-sub-summary">求职网站参考</span></span><span class="flow-sub todo"><span class="flow-sub-agent">你</span><span class="flow-sub-summary">录入 JD</span></span><span class="flow-sub todo"><span class="flow-sub-agent">职业背调</span><span class="flow-sub-summary">分析归纳</span></span><span class="flow-sub todo"><span class="flow-sub-agent">你</span><span class="flow-sub-summary">批准归纳稿</span></span></div></li><li class="flow-group todo"><span class="flow-group-title"><span class="flow-num">3</span>全网调研</span><div class="flow-substeps"><span class="flow-sub todo"><span class="flow-sub-agent">行业调研</span><span class="flow-sub-summary">搜行业要求写调研稿</span></span><span class="flow-sub todo"><span class="flow-sub-agent">你</span><span class="flow-sub-summary">批准调研链接</span></span></div></li><li class="flow-group todo"><span class="flow-group-title"><span class="flow-num">4</span>链接入库</span><div class="flow-substeps"><span class="flow-sub todo"><span class="flow-sub-agent">知识库</span><span class="flow-sub-summary">打开链接核实入库</span></span></div></li><li class="flow-group todo"><span class="flow-group-title"><span class="flow-num">5</span>上传素材</span><div class="flow-substeps"><span class="flow-sub todo"><span class="flow-sub-agent">你</span><span class="flow-sub-summary">上传素材</span></span><span class="flow-sub todo"><span class="flow-sub-agent">知识库</span><span class="flow-sub-summary">整理进库</span></span></div></li><li class="flow-group todo"><span class="flow-group-title"><span class="flow-num">6</span>目标分解</span><div class="flow-substeps"><span class="flow-sub todo"><span class="flow-sub-agent">分解</span><span class="flow-sub-summary">写目标分解</span></span><span class="flow-sub todo"><span class="flow-sub-agent">复检</span><span class="flow-sub-summary">核分解结构</span></span><span class="flow-sub todo"><span class="flow-sub-agent">你</span><span class="flow-sub-summary">批准分解</span></span></div></li><li class="flow-group todo"><span class="flow-group-title"><span class="flow-num">7</span>人机分工</span><div class="flow-substeps"><span class="flow-sub todo"><span class="flow-sub-agent">人机分工</span><span class="flow-sub-summary">写 tools.md</span></span><span class="flow-sub todo"><span class="flow-sub-agent">复检</span><span class="flow-sub-summary">核人机分工</span></span><span class="flow-sub todo"><span class="flow-sub-agent">知识库</span><span class="flow-sub-summary">入新链接</span></span></div></li><li class="flow-group todo"><span class="flow-group-title"><span class="flow-num">8</span>交稿</span><div class="flow-substeps"><span class="flow-sub todo"><span class="flow-sub-agent">主 agent</span><span class="flow-sub-summary">终审交稿</span></span><span class="flow-sub todo"><span class="flow-sub-agent">你</span><span class="flow-sub-summary">查看终稿</span></span></div></li></ol>
+    <div class="wait-banner on" id="wait-banner">请在下面对话说出职业名，开始本轮圆桌。</div>
+    <div id="ingest-progress" class="ingest-progress" style="display:none" aria-live="polite"></div>
+    <div class="alert-bar" id="alert-bar"></div>
+  </header>
+  <div class="workspace">
+    <aside class="rail" aria-label="圆桌席位">
+      <p class="rail-label">圆桌席位</p>
+      <div class="roster" id="roster"><article class="seat idle" data-role="orchestrator"><header>主 agent</header><p>待命</p></article><article class="seat idle" data-role="researcher"><header>知识库</header><p>待命</p></article><article class="seat idle" data-role="industry-survey"><header>行业调研</header><p>待命</p></article><article class="seat idle" data-role="tools-division"><header>人机分工</header><p>待命</p></article><article class="seat idle" data-role="scout"><header>职业背调</header><p>待命</p></article><article class="seat idle" data-role="browser"><header>本地浏览器</header><p>待命</p></article><article class="seat idle" data-role="analyst"><header>分解</header><p>待命</p></article><article class="seat idle" data-role="critic"><header>复检</header><p>待命</p></article></div>
+    </aside>
+    <div class="stage-shell">
+      <nav class="tabs"><button type="button" class="tab on" data-tab="talk">圆桌对话</button><button type="button" class="tab" data-tab="files">生成的文件</button></nav>
+      <main>
+        <section id="panel-talk" class="panel on"><div class="talk-col"><div id="talk-thread"><p class="empty">圆桌已开始。在下面把职业或要求发给主 agent。</p></div>
+    <article class="card you" id="talk-composer">
+      <header><b>1. 你</b><span class="to">→ 主 agent</span></header>
+      <p class="stage-hint">当前阶段：等待用户给出职业</p>
+      <form id="task-form">
+        <textarea id="task-box" rows="3" placeholder="发给主 agent：继续 / 做统计 / 修改意见等"></textarea>
+        <div class="row">
+          <button type="submit">发送</button>
+          <button type="button" id="clear-talk-btn" class="secondary danger">清空对话</button>
+          <button type="button" id="upload-records-btn-global" class="secondary">查看传入文章</button>
+          <span class="hint" id="task-hint">这条会插进上方聊天记录，由主 agent 接手。</span>
+        </div>
+      </form>
+    </article>
+    </div>
+    <div id="dock">
+    <div class="upload-box duty-box" id="duty-box" style="display:none">
+      <header>背调传送窗口（只入库，不发给 AI）</header>
+      <p class="hint">从招聘站复制 <strong>整份 JD</strong> 粘贴；每次提交 = 清单里的 <strong>1 个 item</strong>。先在下方清单增删确认，再点「交给背调分析」才会交给 scout。</p>
+      <div class="row">
+        <input type="text" id="duty-company" placeholder="公司名（可选）" />
+      </div>
+      <div class="row">
+        <textarea id="duty-text" rows="6" placeholder="粘贴这一整份 JD（岗位职责 / 任职要求全文均可）…"></textarea>
+      </div>
+      <div class="row">
+        <input type="file" id="duty-file" accept=".txt,.md,.csv,text/plain" />
+      </div>
+      <div class="row">
+        <button type="button" id="duty-submit-btn">加入 JD 清单</button>
+        <button type="button" id="duty-records-btn" class="secondary">查看背调记录</button>
+        <button type="button" id="duty-summarize-btn" class="secondary">交给背调分析</button>
+        <span class="hint" id="duty-hint">清单 0 份</span>
+      </div>
+      <div class="duty-list-panel" id="duty-list-panel">
+        <div class="duty-list-head">已录入 JD（可展开查看 / 删除）</div>
+        <div id="duty-list" class="duty-list"><p class="hint duty-list-empty">还没有 JD。粘贴后点「加入 JD 清单」。</p></div>
+      </div>
+    </div>
+    <div class="upload-box" id="survey-box" style="display:none">
+      <header>调研链接窗口（等你批准）</header>
+      <p class="hint">下面是本轮推荐入库的公开链接。满意请在下方对话发 <strong>批准</strong> 或 <strong>继续</strong>；不满意直接写修改意见。</p>
+      <div id="survey-link-list"><p class="hint">调研链接汇总尚未生成，请稍候行业调研席。</p></div>
+    </div>
+    <div class="upload-box" id="upload-box" style="display:none">
+      <header>传入文件窗口</header>
+      <p class="hint">原文链接可选；有在线出处时填写 http(s) 地址，本地文件可留空。全部传完后在下面发「继续」进入分解。</p>
+      <div class="row">
+        <input type="file" id="upload-file" />
+      </div>
+      <div class="row">
+        <input type="url" id="upload-url" placeholder="原文链接（可选）https://..." />
+        <button type="button" id="upload-btn">传入知识库</button>
+        <button type="button" id="upload-records-btn" class="secondary">查看传入文章</button>
+      </div>
+      <p class="hint" id="upload-hint">支持 .md / .txt / .pdf / .doc / .docx。上传后<strong>全文</strong>蒸馏切片进库。</p>
+      <p class="hint" id="upload-list-empty">还没有传入文件。</p>
+    </div>
+    </div>
+    </section><section id="panel-files" class="panel"><div id="files-list" class="file-list empty-files"><p class="empty">还没有生成文件。圆桌产出的 md / txt / Word 会出现在这里。</p></div></section>
+      </main>
+    </div>
+  </div>
+  </div>
+  <script>
+    (function () {
+      var TASK_URL = "/task";
+      var UPLOAD_URL = TASK_URL.replace(/\/task$/, "/upload");
+      var CLEAR_TALK_URL = TASK_URL.replace(/\/task$/, "/clear-talk");
+      var BACKGROUND_DUTY_URL = TASK_URL.replace(/\/task$/, "/background-duty");
+      var BACKGROUND_SUMMARIZE_URL = TASK_URL.replace(/\/task$/, "/background-summarize");
+      var DUTY_STAGES = ["await_background", "manual_background"];
+      var UPLOAD_STAGES = ["await_uploads"];
+      var SURVEY_STAGES = ["await_survey", "await_survey_ingest"];
+      var FLOW_STEPS = ["定职业建库", "职业背调", "全网调研", "链接入库", "上传素材", "目标分解", "人机分工", "交稿"];
+      var FLOW_STEP_SPECS = [{"title": "定职业建库", "steps": [{"agent": "你", "summary": "说职业名"}, {"agent": "主 agent", "summary": "判定并点兵"}, {"agent": "知识库", "summary": "建库骨架"}]}, {"title": "职业背调", "steps": [{"agent": "主 agent", "summary": "派职业背调"}, {"agent": "职业背调", "summary": "求职网站参考"}, {"agent": "你", "summary": "录入 JD"}, {"agent": "职业背调", "summary": "分析归纳"}, {"agent": "你", "summary": "批准归纳稿"}]}, {"title": "全网调研", "steps": [{"agent": "行业调研", "summary": "搜行业要求写调研稿"}, {"agent": "你", "summary": "批准调研链接"}]}, {"title": "链接入库", "steps": [{"agent": "知识库", "summary": "打开链接核实入库"}]}, {"title": "上传素材", "steps": [{"agent": "你", "summary": "上传素材"}, {"agent": "知识库", "summary": "整理进库"}]}, {"title": "目标分解", "steps": [{"agent": "分解", "summary": "写目标分解"}, {"agent": "复检", "summary": "核分解结构"}, {"agent": "你", "summary": "批准分解"}]}, {"title": "人机分工", "steps": [{"agent": "人机分工", "summary": "写 tools.md"}, {"agent": "复检", "summary": "核人机分工"}, {"agent": "知识库", "summary": "入新链接"}]}, {"title": "交稿", "steps": [{"agent": "主 agent", "summary": "终审交稿"}, {"agent": "你", "summary": "查看终稿"}]}];
+      var STAGE_TO_FLOW = {"idle": 0, "kb_init": 0, "scout_job_sites": 1, "manual_background": 1, "analyze_background": 1, "background": 1, "review_background": 1, "await_handoff": 1, "await_background": 1, "collect": 2, "await_survey": 2, "await_survey_ingest": 3, "await_uploads": 4, "decompose": 5, "review_decompose": 5, "await_decompose": 5, "tools": 6, "review_tools": 6, "await_kb_ingest": 6, "await_delivery": 7, "done": 7};
+      var STAGE_TO_FLOW_CELL = {"idle": [0, 0], "kb_init": [0, 2], "scout_job_sites": [1, 1], "manual_background": [1, 2], "analyze_background": [1, 3], "background": [1, 1], "review_background": [1, 3], "await_handoff": [1, 2], "await_background": [1, 4], "collect": [2, 0], "await_survey": [2, 1], "await_survey_ingest": [3, 0], "await_uploads": [4, 0], "decompose": [5, 0], "review_decompose": [5, 1], "await_decompose": [5, 2], "tools": [6, 0], "review_tools": [6, 1], "await_kb_ingest": [6, 2], "await_delivery": [7, 0], "done": [7, 1]};
+      var SEAT_LABELS = {"orchestrator": "主 agent", "researcher": "知识库", "industry-survey": "行业调研", "tools-division": "人机分工", "scout": "职业背调", "browser": "本地浏览器", "analyst": "分解", "critic": "复检"};
+      var DISPLAY_NAMES = {"user": "你", "orchestrator": "主 agent", "researcher": "知识库", "industry-survey": "行业调研", "tools-division": "人机分工", "scout": "职业背调", "browser": "本地浏览器", "analyst": "分解", "critic": "复检"};
+      var ROLES = ["orchestrator", "researcher", "industry-survey", "tools-division", "scout", "browser", "analyst", "critic"];
+      var rosterState = {"orchestrator": {"state": "idle", "activity": "待命"}, "researcher": {"state": "idle", "activity": "待命"}, "industry-survey": {"state": "idle", "activity": "待命"}, "tools-division": {"state": "idle", "activity": "待命"}, "scout": {"state": "idle", "activity": "待命"}, "browser": {"state": "idle", "activity": "待命"}, "analyst": {"state": "idle", "activity": "待命"}, "critic": {"state": "idle", "activity": "待命"}};
+      (function syncDockClass() {
+        var panelTalk = document.getElementById("panel-talk");
+        if (!panelTalk) return;
+        var anyDock = false;
+        ["duty-box", "survey-box", "upload-box"].forEach(function (id) {
+          var el = document.getElementById(id);
+          if (el && el.style.display !== "none") anyDock = true;
+        });
+        if (anyDock) panelTalk.classList.add("has-dock");
+        else panelTalk.classList.remove("has-dock");
+      })();
+      var saved = sessionStorage.getItem("board-tab");
+      if (saved) {
+        var btn = document.querySelector('.tab[data-tab="' + saved + '"]');
+        var panel = document.getElementById("panel-" + saved);
+        if (btn && panel) {
+          document.querySelectorAll(".tab").forEach(function (b) { b.classList.remove("on"); });
+          document.querySelectorAll(".panel").forEach(function (p) { p.classList.remove("on"); });
+          btn.classList.add("on");
+          panel.classList.add("on");
+        }
+      }
+      document.querySelectorAll(".tab").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          document.querySelectorAll(".tab").forEach(function (b) { b.classList.remove("on"); });
+          document.querySelectorAll(".panel").forEach(function (p) { p.classList.remove("on"); });
+          btn.classList.add("on");
+          var panel = document.getElementById("panel-" + btn.dataset.tab);
+          if (panel) panel.classList.add("on");
+          sessionStorage.setItem("board-tab", btn.dataset.tab);
+        });
+      });
+      function escapeHtml(text) {
+        return String(text || "").replace(/[&<>"']/g, function (ch) {
+          return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch];
+        });
+      }
+      function flowSubClasses(groupI, subI, curGroup, curSub, allDone) {
+        var lastGroup = FLOW_STEP_SPECS.length - 1;
+        var lastSub = (FLOW_STEP_SPECS[lastGroup].steps || []).length - 1;
+        var cls = "flow-sub";
+        if (allDone) {
+          cls += groupI === lastGroup && subI === lastSub ? " on" : " done";
+        } else if (groupI < curGroup) {
+          cls += " done";
+        } else if (groupI > curGroup) {
+          cls += " todo";
+        } else if (subI < curSub) {
+          cls += " done";
+        } else if (subI === curSub) {
+          cls += " on";
+        } else {
+          cls += " todo";
+        }
+        return cls;
+      }
+      function flowGroupClasses(groupI, curGroup, allDone) {
+        var cls = "flow-group";
+        if (allDone) {
+          cls += " done";
+          if (groupI === FLOW_STEP_SPECS.length - 1) cls += " on";
+        } else if (groupI < curGroup) {
+          cls += " done";
+        } else if (groupI === curGroup) {
+          cls += " on";
+        } else {
+          cls += " todo";
+        }
+        return cls;
+      }
+      function paintFlow(stage) {
+        var root = document.getElementById("flow-steps");
+        if (!root || !FLOW_STEP_SPECS) return;
+        var cell = STAGE_TO_FLOW_CELL.hasOwnProperty(stage) ? STAGE_TO_FLOW_CELL[stage] : [0, 0];
+        var curGroup = cell[0];
+        var curSub = cell[1];
+        var allDone = stage === "done";
+        var html = "";
+        FLOW_STEP_SPECS.forEach(function (spec, groupI) {
+          var steps = spec.steps || [];
+          var subsHtml = "";
+          steps.forEach(function (step, subI) {
+            subsHtml += '<span class="' + flowSubClasses(groupI, subI, curGroup, curSub, allDone) + '">'
+              + '<span class="flow-sub-agent">' + escapeHtml(step.agent || "") + "</span>"
+              + '<span class="flow-sub-summary">' + escapeHtml(step.summary || "") + "</span>"
+              + "</span>";
+          });
+          html += '<li class="' + flowGroupClasses(groupI, curGroup, allDone) + '">'
+            + '<span class="flow-group-title"><span class="flow-num">' + (groupI + 1) + '</span>'
+            + escapeHtml(spec.title) + "</span>"
+            + '<div class="flow-substeps">' + subsHtml + '</div>'
+            + "</li>";
+        });
+        root.innerHTML = html;
+      }
+      function paintRoster(seats) {
+        var root = document.getElementById("roster");
+        if (!root || !seats) return;
+        rosterState = seats;
+        var html = "";
+        ROLES.forEach(function (role) {
+          var item = seats[role] || { state: "idle", activity: "待命" };
+          html += '<article class="seat ' + escapeHtml(item.state || "idle") + '" data-role="' + role + '">'
+            + "<header>" + escapeHtml(SEAT_LABELS[role] || role) + "</header>"
+            + "<p>" + escapeHtml(item.activity || "待命") + "</p></article>";
+        });
+        root.innerHTML = html;
+      }
+      function paintSeatWorking(role, activity) {
+        var next = Object.assign({}, rosterState);
+        next[role] = { state: "working", activity: activity || "正在工作" };
+        paintRoster(next);
+      }
+      function statusUrls() {
+        var urls = ["/status"];
+        if (location.protocol === "file:") {
+          for (var p = 8765; p < 8773; p++) urls.push("http://127.0.0.1:" + p + "/status");
+        }
+        return urls;
+      }
+      function paintTalk(messages) {
+        var thread = document.getElementById("talk-thread");
+        var composer = document.getElementById("talk-composer");
+        if (!thread || !composer) return;
+        messages = messages || [];
+        thread.innerHTML = "";
+        if (!messages.length) {
+          var empty = document.createElement("p");
+          empty.className = "empty talk-empty";
+          empty.textContent = "对话已清空。在右侧输入框继续发给主 agent。";
+          thread.appendChild(empty);
+        }
+        messages.forEach(function (item, idx) {
+          var who = DISPLAY_NAMES[item.speaker] || item.speaker || "？";
+          var route = "";
+          if (item.to && item.to.length) {
+            route = item.to.map(function (n) { return DISPLAY_NAMES[n] || n; }).join("、");
+          }
+          var card = document.createElement("article");
+          card.className = item.speaker === "user" ? "card you" : "card";
+          var header = "<header><b>" + (idx + 1) + ". " + escapeHtml(who) + "</b>";
+          if (route) header += '<span class="to">→ ' + escapeHtml(route) + "</span>";
+          header += "</header>";
+          card.innerHTML = header + "<pre></pre>";
+          card.querySelector("pre").textContent = item.content || "（无文本）";
+          if (item.files && item.files.length) {
+            var hint = document.createElement("p");
+            hint.className = "file-hint";
+            hint.textContent = "本条附带文件：";
+            card.appendChild(hint);
+            var list = document.createElement("div");
+            list.className = "file-list";
+            item.files.forEach(function (f) {
+              var row = document.createElement("div");
+              row.className = "file-item";
+              var meta = document.createElement("div");
+              meta.className = "file-meta";
+              var nm = document.createElement("span");
+              nm.className = "file-name";
+              nm.textContent = f.label || f.name || "文件";
+              meta.appendChild(nm);
+              if (f.created_at || f.mtime) {
+                var tm = document.createElement("span");
+                tm.className = "file-time";
+                tm.textContent = f.created_at || f.mtime;
+                meta.appendChild(tm);
+              }
+              if (f.agent_label) {
+                var ag = document.createElement("span");
+                ag.className = "file-agent";
+                ag.textContent = "生成席位：" + f.agent_label;
+                meta.appendChild(ag);
+              }
+              var actions = document.createElement("div");
+              actions.className = "file-actions";
+              var open = document.createElement("a");
+              open.className = "file open";
+              open.href = f.url || "#";
+              open.target = "_blank";
+              open.rel = "noopener";
+              open.textContent = "打开";
+              var dl = document.createElement("a");
+              dl.className = "file";
+              var dlHref = f.url || "#";
+              dl.href = dlHref + (dlHref.indexOf("?") >= 0 ? "&" : "?") + "download=1";
+              dl.setAttribute("download", f.name || "file");
+              dl.textContent = "下载";
+              actions.appendChild(open);
+              actions.appendChild(dl);
+              row.appendChild(meta);
+              row.appendChild(actions);
+              list.appendChild(row);
+            });
+            card.appendChild(list);
+          }
+          thread.appendChild(card);
+        });
+        var header = composer.querySelector("header b");
+        if (header) header.textContent = (messages.length + 1) + ". 你";
+        thread.scrollTop = thread.scrollHeight;
+      }
+      var ingestDoneUntil = 0;
+      var ingestWasActive = false;
+      var INGEST_STAGES = ["await_survey_ingest", "await_kb_ingest", "await_uploads"];
+      function paintIngest(progress, stage) {
+        var box = document.getElementById("ingest-progress");
+        if (!box) return;
+        if (!progress) {
+          box.style.display = "none";
+          box.className = "ingest-progress";
+          box.innerHTML = "";
+          ingestWasActive = false;
+          return;
+        }
+        var now = Date.now();
+        var active = !!progress.active;
+        var status = String(progress.status || "");
+        // 离开入库阶段后不展示「已完成」横条
+        if (!active && stage && INGEST_STAGES.indexOf(stage) < 0) {
+          box.style.display = "none";
+          box.className = "ingest-progress";
+          box.innerHTML = "";
+          ingestDoneUntil = 0;
+          ingestWasActive = false;
+          return;
+        }
+        // 仅在「进行中 → 完成」切换时亮几秒，避免每次轮询把计时器续命
+        if (active) {
+          ingestWasActive = true;
+        } else if (ingestWasActive && status && (/完成|已入库|已整理/.test(status))) {
+          ingestDoneUntil = now + 8000;
+          ingestWasActive = false;
+        }
+        var showDone = !active && now < ingestDoneUntil && !!status;
+        if (!active && !showDone) {
+          box.style.display = "none";
+          box.className = "ingest-progress";
+          box.innerHTML = "";
+          return;
+        }
+        var cur = Number(progress.current || 0);
+        var total = Number(progress.total || 0);
+        var pct = total ? Math.min(100, Math.round((cur / Math.max(total, 1)) * 100)) : (active ? 12 : 100);
+        var indeterminate = active && cur === 0 && (!total || total <= 1) && !progress.title;
+        if (active && total > 0 && cur >= total) pct = Math.min(99, pct);
+        if (!active) pct = 100;
+        var kind = progress.kind === "upload" ? "上传蒸馏" : "链接入库";
+        var title = progress.title || progress.url || "";
+        var fileBit = "";
+        if (progress.file_total && Number(progress.file_total) > 1) {
+          fileBit = " · 文件 " + (progress.file_index || 0) + "/" + progress.file_total;
+        }
+        var html = '<div class="ingest-head">'
+          + '<span class="ingest-kind">' + kind + (active ? " · 进行中" : " · 已完成") + "</span>"
+          + "<span>" + (total ? (cur + " / " + total) : (active ? "处理中…" : ""))
+          + escapeHtml(fileBit) + "</span>"
+          + (status ? "<span>· " + escapeHtml(status) + "</span>" : "")
+          + "</div>";
+        html += '<div class="bar' + (indeterminate ? " indeterminate" : "") + '"><i style="width:' + pct + '%"></i></div>';
+        if (title) html += '<div class="ingest-current">当前：' + escapeHtml(String(title).slice(0, 100)) + "</div>";
+        var items = progress.items || [];
+        if (items.length) {
+          html += "<ul>";
+          items.slice(-8).forEach(function (it) {
+            var cls = it.state === "ok" ? "ok" : (it.state === "fail" ? "fail" : "run");
+            html += '<li class="' + cls + '">' + escapeHtml((it.label || it.url || "").slice(0, 90))
+              + (it.detail ? " · " + escapeHtml(String(it.detail).slice(0, 40)) : "")
+              + "</li>";
+          });
+          html += "</ul>";
+        }
+        box.innerHTML = html;
+        box.style.display = "block";
+        box.className = "ingest-progress on" + (active ? "" : " done");
+      }
+      function paintFiles(packets) {
+        var box = document.getElementById("files-list");
+        if (!box) return;
+        box.innerHTML = "";
+        box.className = "file-list";
+        if (!packets || !packets.length) {
+          box.className = "file-list empty-files";
+          var empty = document.createElement("p");
+          empty.className = "empty";
+          empty.textContent = "还没有生成文件。圆桌产出的 md / txt / Word 会出现在这里。";
+          box.appendChild(empty);
+          return;
+        }
+        var hint = document.createElement("p");
+        hint.className = "file-hint";
+        hint.textContent = "共 " + packets.length + " 个生成文件（新的在上；可打开或下载）：";
+        box.appendChild(hint);
+        packets.forEach(function (f) {
+          var card = document.createElement("article");
+          card.className = "file-card";
+          var meta = document.createElement("div");
+          meta.className = "file-meta";
+          var nm = document.createElement("span");
+          nm.className = "file-name";
+          nm.textContent = f.label || f.name || "文件";
+          var tm = document.createElement("span");
+          tm.className = "file-time";
+          tm.textContent = "生成时间：" + (f.created_at || f.mtime || "—");
+          meta.appendChild(nm);
+          meta.appendChild(tm);
+          if (f.agent_label) {
+            var ag = document.createElement("span");
+            ag.className = "file-agent";
+            ag.textContent = "生成席位：" + f.agent_label;
+            meta.appendChild(ag);
+          }
+          var actions = document.createElement("div");
+          actions.className = "file-actions";
+          var open = document.createElement("a");
+          open.className = "file open";
+          open.href = f.url || "#";
+          open.target = "_blank";
+          open.rel = "noopener";
+          open.textContent = "打开";
+          var dl = document.createElement("a");
+          dl.className = "file";
+          var dlHref = f.url || "#";
+          dl.href = dlHref + (dlHref.indexOf("?") >= 0 ? "&" : "?") + "download=1";
+          dl.setAttribute("download", f.name || "file");
+          dl.textContent = "下载";
+          actions.appendChild(open);
+          actions.appendChild(dl);
+          card.appendChild(meta);
+          card.appendChild(actions);
+          box.appendChild(card);
+        });
+      }
+      function paintWaitBanner(text) {
+        var bar = document.getElementById("wait-banner");
+        if (!bar) return;
+        if (!text) {
+          bar.className = "wait-banner";
+          bar.textContent = "";
+          return;
+        }
+        bar.className = "wait-banner on";
+        bar.textContent = text;
+      }
+      function paintAlerts(alerts) {
+        var bar = document.getElementById("alert-bar");
+        if (!bar) return;
+        if (!alerts || !alerts.length) {
+          bar.className = "alert-bar";
+          bar.textContent = "";
+          return;
+        }
+        var top = alerts[0] || {};
+        bar.className = "alert-bar on " + (top.level || "warn");
+        bar.textContent = alerts.map(function (a) { return a.message || ""; }).filter(Boolean).join(" · ");
+      }
+      function paintSurveyLinks(links) {
+        var host = document.getElementById("survey-link-list");
+        if (!host) return;
+        if (!links || !links.length) {
+          host.outerHTML = '<div id="survey-link-list"><p class="hint">暂无推荐链接，请发「重新全网调研」。</p></div>';
+          return;
+        }
+        var html = '<ul class="up-list" id="survey-link-list">';
+        links.forEach(function (item) {
+          var t = item.title || item.url || "";
+          var u = item.url || "";
+          var sc = item.score != null ? ' <span class="hint">（入库 ' + item.score + '）</span>' : "";
+          html += "<li><strong>" + escapeHtml(t) + "</strong>" + sc + "<br>"
+            + '<a href="' + escapeHtml(u) + '" target="_blank" rel="noopener">'
+            + escapeHtml(u.slice(0, 100)) + "</a></li>";
+        });
+        html += "</ul>";
+        var wrap = host.tagName === "UL" ? host.parentNode : host;
+        if (wrap && host.tagName === "UL") {
+          wrap.innerHTML = html;
+        } else if (host) {
+          host.outerHTML = html;
+        }
+      }
+      var TALK_SIG = "";
+      function pollStatus() {
+        var urls = statusUrls();
+        function tryNext(i) {
+          if (i >= urls.length) return;
+          fetch(urls[i], { cache: "no-store" }).then(function (res) { return res.json(); }).then(function (data) {
+            if (data.seats) paintRoster(data.seats);
+            if (data.alerts) paintAlerts(data.alerts);
+            if (data.wait_banner !== undefined) paintWaitBanner(data.wait_banner);
+            if (data.stage) paintFlow(data.stage);
+            if (data.stage_label) {
+              var stage = document.querySelector(".stage-hint");
+              if (stage) stage.textContent = "当前阶段：" + data.stage_label;
+              var chip = document.getElementById("stage-chip");
+              if (chip) chip.textContent = data.stage_label;
+            }
+            if (data.packets) paintFiles(data.packets);
+            if (data.duty_capture) {
+              var dh = document.getElementById("duty-hint");
+              if (dh) {
+                var cnt = data.duty_capture.count || 0;
+                dh.textContent = "清单 " + cnt + " 份" + (data.duty_capture.summarized ? "（已分析过）" : "（未交 AI）");
+              }
+              paintDutyList(data.duty_capture.entries || []);
+            }
+            paintIngest(data.ingest_progress, data.stage);
+            var dutyBox = document.getElementById("duty-box");
+            if (dutyBox && data.stage) {
+              var showDuty = data.show_duty_window === true || DUTY_STAGES.indexOf(data.stage) >= 0;
+              dutyBox.style.display = showDuty ? "" : "none";
+            }
+            var surveyBox = document.getElementById("survey-box");
+            if (surveyBox && data.stage) {
+              var showSurvey = data.show_survey_window === true || SURVEY_STAGES.indexOf(data.stage) >= 0;
+              surveyBox.style.display = showSurvey ? "" : "none";
+              var sHead = surveyBox.querySelector("header");
+              var sHint = surveyBox.querySelector("p.hint");
+              if (data.stage === "await_survey_ingest") {
+                if (sHead) sHead.textContent = "调研链接窗口（知识库正在入库）";
+                if (sHint) sHint.innerHTML = "知识库 agent 正在逐条打开核实并写入知识库，请稍候。入库完成后会自动出现 <strong>传入文件窗口</strong>。";
+              } else if (data.stage === "await_survey") {
+                if (sHead) sHead.textContent = "调研链接窗口（等你批准）";
+                if (sHint) sHint.innerHTML = "下面是本轮推荐链接。满意请在下方对话发 <strong>批准</strong> 或 <strong>继续</strong>；不满意直接写修改意见。";
+              }
+            }
+            var uploadBox = document.getElementById("upload-box");
+            if (uploadBox && data.stage) {
+              var showUpload = data.show_upload_window === true || UPLOAD_STAGES.indexOf(data.stage) >= 0;
+              uploadBox.style.display = showUpload ? "" : "none";
+            }
+            var panelTalk = document.getElementById("panel-talk");
+            if (panelTalk) {
+              var anyDock = false;
+              [document.getElementById("duty-box"), document.getElementById("survey-box"), document.getElementById("upload-box")].forEach(function (el) {
+                if (el && el.style.display !== "none") anyDock = true;
+              });
+              if (anyDock) panelTalk.classList.add("has-dock");
+              else panelTalk.classList.remove("has-dock");
+            }
+            if (data.survey_links) paintSurveyLinks(data.survey_links);
+            var n = data.history_len || 0;
+            var msgs = data.messages || [];
+            var last = msgs.length ? String((msgs[msgs.length - 1].content || "")).slice(0, 48) : "";
+            var fileSig = msgs.map(function (m) {
+              return (m.files && m.files.length) ? m.files.length : 0;
+            }).join(",");
+            var stamp = data.stamp || "";
+            var sig = n + ":" + fileSig + ":" + stamp + ":" + last;
+            if (sig !== TALK_SIG) {
+              HISTORY_LEN = n;
+              TALK_SIG = sig;
+              paintTalk(msgs);
+            }
+            var titleName = (data.profession || data.topic || "").trim();
+            var h1 = document.querySelector("header.top h1");
+            if (h1 && titleName) {
+              h1.textContent = titleName;
+              document.title = "睿览 · 圆桌 · " + titleName;
+            } else if (h1 && !titleName) {
+              h1.textContent = "职业工作手册";
+              document.title = "睿览 · 职业工作手册";
+            }
+            var meta = document.querySelector("header.top .meta");
+            if (meta && data.stamp) {
+              var who = data.speaker ? (DISPLAY_NAMES[data.speaker] || data.speaker) : "—";
+              var profBit = titleName
+                ? ("当前职业 " + titleName + " · ")
+                : "尚未选定职业 · ";
+              meta.textContent = profBit + "上一发言 " + who + " · 更新 " + data.stamp + " · 换职业发「换职业 XXX」";
+            }
+          }).catch(function () { tryNext(i + 1); });
+        }
+        tryNext(0);
+      }
+      paintRoster(rosterState);
+      pollStatus();
+      setInterval(pollStatus, 800);
+      var box = document.getElementById("task-box");
+      var hint = document.getElementById("task-hint");
+      var form = document.getElementById("task-form");
+      var composer = document.getElementById("talk-composer");
+      function appendBubble(text) {
+        var thread = document.getElementById("talk-thread");
+        if (!thread) return;
+        var empty = thread.querySelector(".talk-empty");
+        if (empty) empty.remove();
+        var n = document.querySelectorAll("#talk-thread > article.card").length;
+        var card = document.createElement("article");
+        card.className = "card you";
+        card.innerHTML = "<header><b>" + (n + 1) + ". 你</b><span class=\"to\">→ 主 agent</span></header><pre></pre>";
+        card.querySelector("pre").textContent = text;
+        thread.appendChild(card);
+        thread.scrollTop = thread.scrollHeight;
+        var header = composer.querySelector("header b");
+        if (header) header.textContent = (n + 2) + ". 你";
+      }
+      function postTask(text) {
+        var urls = [TASK_URL, "/task"];
+        for (var p = 8765; p < 8773; p++) urls.push("http://127.0.0.1:" + p + "/task");
+        var seen = {};
+        var unique = urls.filter(function (u) {
+          if (seen[u]) return false;
+          seen[u] = true;
+          return true;
+        });
+        function tryNext(i) {
+          if (i >= unique.length) {
+            hint.textContent = "发不出去：请先运行 python main.py，再在圆桌对话里发送。";
+            return;
+          }
+          fetch(unique[i], {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text: text })
+          }).then(function (res) { return res.json(); }).then(function (data) {
+            if (!data.ok) {
+              hint.textContent = data.message || "没发出去。";
+              return;
+            }
+            appendBubble(text);
+            hint.textContent = (data.message || "已交给主 agent。") + " 正在停止其他席位…";
+            box.value = "";
+            var next = Object.assign({}, rosterState);
+            ROLES.forEach(function (role) {
+              if (role === "orchestrator") {
+                next[role] = { state: "working", activity: "收到新消息，正在接手" };
+              } else {
+                next[role] = { state: "idle", activity: "已被打断 / 待命" };
+              }
+            });
+            paintRoster(next);
+            // 强制下一轮拉对话，避免本地气泡被旧 history_len 盖住后看起来像「没发出去」
+            TALK_SIG = "";
+            setTimeout(pollStatus, 200);
+            setTimeout(pollStatus, 900);
+          }).catch(function () { tryNext(i + 1); });
+        }
+        tryNext(0);
+      }
+      function clearTalk() {
+        if (!window.confirm("确定清空圆桌对话？\n\n只删聊天记录，当前进度与「生成的文件」不会动。")) return;
+        if (hint) hint.textContent = "正在清空对话…";
+        if (clearTalkBtn) clearTalkBtn.disabled = true;
+        HISTORY_LEN = 0;
+        TALK_SIG = "0:";
+        paintTalk([]);
+        var clearBody = JSON.stringify({ action: "clear-talk" });
+        var reqs = [
+          { url: CLEAR_TALK_URL, body: "{}" },
+          { url: "/clear-talk", body: "{}" },
+          { url: TASK_URL, body: clearBody },
+          { url: "/task", body: clearBody },
+        ];
+        for (var p = 8765; p < 8773; p++) {
+          reqs.push({ url: "http://127.0.0.1:" + p + "/clear-talk", body: "{}" });
+          reqs.push({ url: "http://127.0.0.1:" + p + "/task", body: clearBody });
+        }
+        var seen = {};
+        var unique = reqs.filter(function (item) {
+          var key = item.url + "|" + item.body;
+          if (seen[key]) return false;
+          seen[key] = true;
+          return true;
+        });
+        function finish(ok, message) {
+          if (clearTalkBtn) clearTalkBtn.disabled = false;
+          if (hint) hint.textContent = message || (ok ? "已清空圆桌对话。" : "清空失败。");
+          if (!ok) pollStatus();
+        }
+        function onClearSuccess(data) {
+          HISTORY_LEN = 0;
+          TALK_SIG = "0:";
+          paintTalk([]);
+          var header = composer.querySelector("header b");
+          if (header) header.textContent = "1. 你";
+          finish(true, (data && data.message) || "已清空圆桌对话。");
+          pollStatus();
+        }
+        function tryNext(i) {
+          if (i >= unique.length) {
+            finish(
+              false,
+              "清空失败：旧版看板服务还在跑。请关掉 python main.py 后重新运行，再 Ctrl+F5 刷新本页。"
+            );
+            return;
+          }
+          var item = unique[i];
+          fetch(item.url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: item.body,
+          })
+            .then(function (res) {
+              return res.text().then(function (text) {
+                var data = {};
+                try { data = JSON.parse(text || "{}"); } catch (e) { data = {}; }
+                if (res.status === 404) return { retry: true };
+                if (!res.ok || !data.ok) {
+                  return { retry: !data.message, message: data.message || ("HTTP " + res.status) };
+                }
+                return { ok: true, data: data };
+              });
+            })
+            .then(function (result) {
+              if (result && result.ok) {
+                onClearSuccess(result.data);
+                return;
+              }
+              if (result && result.retry) {
+                tryNext(i + 1);
+                return;
+              }
+              finish(false, (result && result.message) || "清空失败（" + item.url + "）。");
+            })
+            .catch(function () { tryNext(i + 1); });
+        }
+        tryNext(0);
+      }
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var text = (box.value || "").trim();
+        if (!text) return;
+        postTask(text);
+      });
+      box.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" && !event.shiftKey) {
+          event.preventDefault();
+          form.requestSubmit();
+        }
+      });
+      var clearTalkBtn = document.getElementById("clear-talk-btn");
+      var uploadBtn = document.getElementById("upload-btn");
+      var uploadFile = document.getElementById("upload-file");
+      var uploadUrl = document.getElementById("upload-url");
+      var uploadHint = document.getElementById("upload-hint");
+      function postUpload() {
+        var file = uploadFile && uploadFile.files && uploadFile.files[0];
+        var sourceUrl = (uploadUrl && uploadUrl.value || "").trim();
+        if (!file) {
+          uploadHint.textContent = "请先选择文件。";
+          return;
+        }
+        if (sourceUrl && !/^https?:\/\//i.test(sourceUrl)) {
+          uploadHint.textContent = "原文链接须为 http(s) 地址，或留空。";
+          return;
+        }
+        paintSeatWorking("researcher", "正在整理上传文件进知识库…");
+        paintIngest({
+          active: true,
+          kind: "upload",
+          current: 0,
+          total: 1,
+          status: "已提交，正在后台蒸馏进知识库…",
+          title: file.name,
+          items: [{ label: file.name, state: "run", detail: "排队蒸馏" }]
+        });
+        if (uploadHint) uploadHint.textContent = "正在上传并蒸馏进知识库…（可看上方进度条）";
+        if (uploadBtn) uploadBtn.disabled = true;
+        var urls = [UPLOAD_URL, "/upload"];
+        for (var p = 8765; p < 8773; p++) urls.push("http://127.0.0.1:" + p + "/upload");
+        var seen = {};
+        var unique = urls.filter(function (u) {
+          if (seen[u]) return false;
+          seen[u] = true;
+          return true;
+        });
+        function tryNext(i) {
+          if (i >= unique.length) {
+            if (uploadBtn) uploadBtn.disabled = false;
+            uploadHint.textContent = "传不上去：请确认 python main.py 仍在运行。";
+            pollStatus();
+            return;
+          }
+          var fd = new FormData();
+          fd.append("file", file);
+          fd.append("source_url", sourceUrl);
+          fetch(unique[i], { method: "POST", body: fd }).then(function (res) {
+            return res.json().then(function (payload) {
+              return { okHttp: res.ok, payload: payload };
+            }, function () {
+              throw new Error("bad-json");
+            });
+          }).then(function (wrap) {
+            if (uploadBtn) uploadBtn.disabled = false;
+            var payload = wrap.payload || {};
+            if (!wrap.okHttp || !payload.ok) {
+              uploadHint.textContent = payload.message || "没传上去。";
+              pollStatus();
+              return;
+            }
+            appendBubble(payload.notice || ("【已上传】" + file.name));
+            uploadHint.textContent = payload.message || "已传入，知识库会整理进库。";
+            uploadFile.value = "";
+            uploadUrl.value = "";
+            pollStatus();
+          }).catch(function () { tryNext(i + 1); });
+        }
+        tryNext(0);
+      }
+      if (clearTalkBtn) clearTalkBtn.addEventListener("click", clearTalk);
+      if (uploadBtn) uploadBtn.addEventListener("click", postUpload);
+      var uploadRecordsBtn = document.getElementById("upload-records-btn");
+      function openUploadRecordsPage() {
+        var urls = [TASK_URL.replace(/\/task$/, "/upload-records"), "/upload-records"];
+        for (var p = 8765; p < 8773; p++) urls.push("http://127.0.0.1:" + p + "/upload-records");
+        var seen = {};
+        var unique = urls.filter(function (u) {
+          if (!u || seen[u]) return false;
+          seen[u] = true;
+          return true;
+        });
+        location.href = unique[0] || "/upload-records";
+      }
+      if (uploadRecordsBtn) uploadRecordsBtn.addEventListener("click", openUploadRecordsPage);
+      var uploadRecordsBtnGlobal = document.getElementById("upload-records-btn-global");
+      if (uploadRecordsBtnGlobal) uploadRecordsBtnGlobal.addEventListener("click", openUploadRecordsPage);
+      var dutyCompany = document.getElementById("duty-company");
+      var dutyText = document.getElementById("duty-text");
+      var dutyFile = document.getElementById("duty-file");
+      var dutySubmitBtn = document.getElementById("duty-submit-btn");
+      var dutyRecordsBtn = document.getElementById("duty-records-btn");
+      var dutySummarizeBtn = document.getElementById("duty-summarize-btn");
+      var dutyHint = document.getElementById("duty-hint");
+      var dutyList = document.getElementById("duty-list");
+      function dutyEndpointUrls(path) {
+        var urls = [TASK_URL.replace(/\/task$/, path), path];
+        for (var p = 8765; p < 8773; p++) urls.push("http://127.0.0.1:" + p + path);
+        var seen = {};
+        return urls.filter(function (u) {
+          if (!u || seen[u]) return false;
+          seen[u] = true;
+          return true;
+        });
+      }
+      function openDutyRecordsPage() {
+        var urls = dutyEndpointUrls("/background-records");
+        location.href = urls[0] || "/background-records";
+      }
+      window.addEventListener("message", function (ev) {
+        if (ev && ev.data && ev.data.type === "duty-records-changed") {
+          pollStatus();
+        }
+      });
+      function paintDutyList(entries) {
+        if (!dutyList) return;
+        var rows = Array.isArray(entries) ? entries : [];
+        if (!rows.length) {
+          dutyList.innerHTML = '<p class="hint duty-list-empty">还没有 JD。粘贴后点「加入 JD 清单」。</p>';
+          return;
+        }
+        dutyList.innerHTML = "";
+        rows.forEach(function (row) {
+          var item = document.createElement("div");
+          item.className = "duty-item";
+          item.setAttribute("data-id", String(row.id || ""));
+          var co = (row.company || "").trim() || "未标注公司";
+          var title = "JD #" + (row.id || "?") + " · " + co + " · " + (row.chars || 0) + " 字";
+          var top = document.createElement("div");
+          top.className = "duty-item-top";
+          var meta = document.createElement("div");
+          meta.className = "duty-item-meta";
+          var tEl = document.createElement("div");
+          tEl.className = "duty-item-title";
+          tEl.textContent = title;
+          var prev = document.createElement("p");
+          prev.className = "duty-item-preview";
+          prev.textContent = row.preview || "";
+          meta.appendChild(tEl);
+          meta.appendChild(prev);
+          var actions = document.createElement("div");
+          actions.className = "duty-item-actions";
+          var toggleBtn = document.createElement("button");
+          toggleBtn.type = "button";
+          toggleBtn.className = "secondary";
+          toggleBtn.textContent = "展开";
+          toggleBtn.addEventListener("click", function () {
+            var open = item.classList.toggle("open");
+            toggleBtn.textContent = open ? "收起" : "展开";
+          });
+          var delBtn = document.createElement("button");
+          delBtn.type = "button";
+          delBtn.className = "secondary danger";
+          delBtn.textContent = "删除";
+          delBtn.addEventListener("click", function () {
+            deleteDutyItem(row.id);
+          });
+          actions.appendChild(toggleBtn);
+          actions.appendChild(delBtn);
+          top.appendChild(meta);
+          top.appendChild(actions);
+          var full = document.createElement("pre");
+          full.className = "duty-item-full";
+          full.textContent = row.text || "";
+          item.appendChild(top);
+          item.appendChild(full);
+          dutyList.appendChild(item);
+        });
+      }
+      function deleteDutyItem(id) {
+        if (id == null) return;
+        if (dutyHint) dutyHint.textContent = "正在删除 JD #" + id + "…";
+        var urls = dutyEndpointUrls("/background-duty-delete");
+        function tryNext(i) {
+          if (i >= urls.length) {
+            if (dutyHint) dutyHint.textContent = "删除失败：请确认圆桌仍在运行。";
+            return;
+          }
+          fetch(urls[i], {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ id: id })
+          }).then(function (res) { return res.json(); }).then(function (data) {
+            if (!data.ok) {
+              if (dutyHint) dutyHint.textContent = data.message || "删除失败。";
+              return;
+            }
+            if (dutyHint) dutyHint.textContent = data.message || ("清单 " + (data.total || 0) + " 份");
+            if (data.entries) paintDutyList(data.entries);
+            pollStatus();
+          }).catch(function () { tryNext(i + 1); });
+        }
+        tryNext(0);
+      }
+      function readDutyFile(file, done) {
+        if (!file) { done(""); return; }
+        var reader = new FileReader();
+        reader.onload = function () { done(String(reader.result || "")); };
+        reader.onerror = function () { done(""); };
+        reader.readAsText(file, "utf-8");
+      }
+      function postBackgroundDuty() {
+        var company = (dutyCompany && dutyCompany.value || "").trim();
+        var pasted = (dutyText && dutyText.value || "").trim();
+        var file = dutyFile && dutyFile.files && dutyFile.files[0];
+        readDutyFile(file, function (fileText) {
+          var text = [pasted, (fileText || "").trim()].filter(Boolean).join("\n");
+          if (!text) {
+            if (dutyHint) dutyHint.textContent = "请先粘贴整份 JD 或选择 txt/md 文件。";
+            return;
+          }
+          if (dutySubmitBtn) dutySubmitBtn.disabled = true;
+          var urls = dutyEndpointUrls("/background-duty");
+          function tryNext(i) {
+            if (i >= urls.length) {
+              if (dutySubmitBtn) dutySubmitBtn.disabled = false;
+              if (dutyHint) dutyHint.textContent = "录入失败：请确认 python main.py 仍在运行。";
+              return;
+            }
+            fetch(urls[i], {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ text: text, company: company })
+            }).then(function (res) { return res.json(); }).then(function (data) {
+              if (dutySubmitBtn) dutySubmitBtn.disabled = false;
+              if (!data.ok) {
+                if (dutyHint) dutyHint.textContent = data.message || "录入失败。";
+                return;
+              }
+              if (dutyHint) dutyHint.textContent = data.message || ("清单 " + (data.total || "?") + " 份（未交 AI）");
+              if (dutyText) dutyText.value = "";
+              if (dutyFile) dutyFile.value = "";
+              if (data.entries) paintDutyList(data.entries);
+              pollStatus();
+            }).catch(function () { tryNext(i + 1); });
+          }
+          tryNext(0);
+        });
+      }
+      function postBackgroundSummarize() {
+        if (dutyHint) dutyHint.textContent = "正在把清单交给背调分析，请稍候…";
+        if (dutySummarizeBtn) dutySummarizeBtn.disabled = true;
+        paintSeatWorking("scout", "正在分析 JD 清单（去杂音、做归纳）…");
+        var urls = dutyEndpointUrls("/background-summarize");
+        function tryNext(i) {
+          if (i >= urls.length) {
+            if (dutySummarizeBtn) dutySummarizeBtn.disabled = false;
+            if (dutyHint) dutyHint.textContent = "分析失败：请确认圆桌仍在运行。";
+            return;
+          }
+          fetch(urls[i], { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" })
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+              if (dutySummarizeBtn) dutySummarizeBtn.disabled = false;
+              if (!data.ok) {
+                if (dutyHint) dutyHint.textContent = data.message || "分析失败。";
+                return;
+              }
+              if (dutyHint) dutyHint.textContent = data.message || "归纳稿已生成，请查看「交给你的文件」。";
+              pollStatus();
+            }).catch(function () { tryNext(i + 1); });
+        }
+        tryNext(0);
+      }
+      if (dutySubmitBtn) dutySubmitBtn.addEventListener("click", postBackgroundDuty);
+      if (dutyRecordsBtn) dutyRecordsBtn.addEventListener("click", openDutyRecordsPage);
+      if (dutySummarizeBtn) dutySummarizeBtn.addEventListener("click", postBackgroundSummarize);
+    })();
+  </script>
+</body>
+</html>

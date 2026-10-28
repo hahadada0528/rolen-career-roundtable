@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "preferred_hosts": [
+    "github.com",
+    "microsoft.com",
+    "feishu.cn",
+    "dingtalk.com",
+    "figma.com",
+    "atlassian.com",
+    "jetbrains.com",
+    "yonyou.com",
+    "kingdee.com"
+  ],
+  "preferred_hosts_by_profession": {
+    "人力资源": [
+      "beisen.com",
+      "mokahr.com",
+      "xrxs.cn",
+      "ihr360.com",
+      "dingtalk.com",
+      "feishu.cn",
+      "zhaopin.com",
+      "zhipin.com",
+      "51job.com",
+      "hrloo.com",
+      "chinahrd.net",
+      "shrm.org",
+      "lattice.com",
+      "greenhouse.com",
+      "microsoft.com"
+    ],
+    "软件工程师": [
+      "jetbrains.com",
+      "github.com",
+      "gitlab.com",
+      "atlassian.com",
+      "jenkins.io",
+      "prometheus.io",
+      "postman.com",
+      "diagrams.net",
+      "code.visualstudio.com",
+      "microsoft.com",
+      "feishu.cn",
+      "aliyun.com",
+      "huaweicloud.com"
+    ],
+    "产品经理": [
+      "figma.com",
+      "axure.com",
+      "atlassian.com",
+      "feishu.cn",
+      "microsoft.com",
+      "miro.com",
+      "notion.so"
+    ],
+    "会计": [
+      "yonyou.com",
+      "kingdee.com",
+      "chinatax.gov.cn",
+      "microsoft.com",
+      "dingtalk.com"
+    ]
+  },
+  "common": [
+    {
+      "name": "钉钉",
+      "url": "https://www.dingtalk.com/",
+      "blurb": "企业协作与审批、考勤、文档协作。"
+    },
+    {
+      "name": "企业微信",
+      "url": "https://work.weixin.qq.com/",
+      "blurb": "企业沟通、客户联系与办公应用。"
+    },
+    {
+      "name": "飞书",
+      "url": "https://www.feishu.cn/",
+      "blurb": "协作文档、多维表格与流程审批。"
+    },
+    {
+      "name": "Microsoft 365",
+      "url": "https://www.microsoft.com/zh-cn/microsoft-365",
+      "blurb": "文档、表格、邮件与团队协作。"
+    }
+  ],
+  "professions": {
+    "人力资源": [
+      {
+        "name": "北森 iTalent",
+        "url": "https://www.beisen.com/",
+        "blurb": "北森一体化 HR SaaS，覆盖招聘、绩效、组织盘点与人事数据。"
+      },
+      {
+        "name": "Moka 招聘",
+        "url": "https://www.mokahr.com/",
+        "blurb": "Moka 智能招聘、面试与录用流程管理系统。"
+      },
+      {
+        "name": "薪人薪事",
+        "url": "https://www.xrxs.cn/",
+        "blurb": "中小企业 HR SaaS，薪酬、考勤与绩效。"
+      },
+      {
+        "name": "i人事",
+        "url": "https://www.ihr360.com/",
+        "blurb": "利唐 i人事：组织人事、绩效、薪酬与数据分析。"
+      },
+      {
+        "name": "钉钉智能人事",
+        "url": "https://page.dingtalk.com/wow/dingtalk/act/oa-hr",
+        "blurb": "钉钉智能人事：组织架构、审批、入转调离与团队协作。"
+      },
+      {
+        "name": "飞书人事",
+        "url": "https://www.feishu.cn/product/people",
+        "blurb": "飞书人事：组织人事、绩效协作与企业文化建设。"
+      },
+      {
+        "name": "人社部官网",
+        "url": "https://www.mohrss.gov.cn/",
+        "blurb": "人力资源和社会保障部政策、制度与合规公开信息。"
+      },
+      {
+        "name": "智联招聘",
+        "url": "https://www.zhaopin.com/",
+        "blurb": "招聘发布、简历与人才市场公开页。"
+      },
+      {
+        "name": "BOSS直聘",
+        "url": "https://www.zhipin.com/",
+        "blurb": "招聘与人才市场公开信息。"
+      },
+      {
+        "name": "前程无忧",
+        "url": "https://www.51job.com/",
+        "blurb": "51job 招聘发布与候选人管道资讯。"
+      },
+      {
+        "name": "HR百科",
+        "url": "https://www.hrloo.com/",
+        "blurb": "人力资源方法、制度落地、企业文化与案例分析。"
+      },
+      {
+        "name": "中国人力资源开发网",
+        "url": "https://www.chinahrd.net/",
+        "blurb": "HR 管理开发、培训、组织与文化建设资讯。"
+      }
+    ],
+    "会计": [
+      {
+        "name": "用友",
+        "url": "https://www.yonyou.com/",
+        "blurb": "财务核算、税务与企业管理云。"
+      },
+      {
+        "name": "金蝶",
+        "url": "https://www.kingdee.com/",
+        "blurb": "财务云、进销存与企业管理。"
+      },
+      {
+        "name": "国家税务总局",
+        "url": "https://www.chinatax.gov.cn/",
+        "blurb": "税务政策与办税公开信息。"
+      }
+    ],
+    "产品经理": [
+      {
+        "name": "Figma",
+        "url": "https://www.figma.com/",
+        "blurb": "产品原型与协作设计。"
+      },
+      {
+        "name": "Axure",
+        "url": "https://www.axure.com/",
+        "blurb": "交互原型与需求说明。"
+      },
+      {
+        "name": "Jira",
+        "url": "https://www.atlassian.com/software/jira",
+        "blurb": "需求与缺陷跟踪。"
+      }
+    ],
+    "软件工程师": [
+      {
+        "name": "IntelliJ IDEA",
+        "url": "https://www.jetbrains.com/idea/",
+        "blurb": "Java/前端开发 IDE：编码、调试、单元测试与代码审查。"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "blurb": "代码托管、Pull Request 代码审查与协作。"
+      },
+      {
+        "name": "GitLab",
+        "url": "https://about.gitlab.com/",
+        "blurb": "DevOps：代码、CI/CD 部署流水线与问题跟踪。"
+      },
+      {
+        "name": "VS Code",
+        "url": "https://code.visualstudio.com/",
+        "blurb": "前端/全栈开发与调试环境。"
+      },
+      {
+        "name": "Jira",
+        "url": "https://www.atlassian.com/software/jira",
+        "blurb": "需求分析、用户故事、缺陷与迭代跟踪。"
+      },
+      {
+        "name": "Confluence",
+        "url": "https://www.atlassian.com/software/confluence",
+        "blurb": "系统设计文档、项目文档编写与审核协作。"
+      },
+      {
+        "name": "Jenkins",
+        "url": "https://www.jenkins.io/",
+        "blurb": "持续集成、自动化测试与上线部署流水线。"
+      },
+      {
+        "name": "Prometheus",
+        "url": "https://prometheus.io/",
+        "blurb": "系统监控、告警与故障排查指标。"
+      },
+      {
+        "name": "Grafana",
+        "url": "https://grafana.com/",
+        "blurb": "监控可视化与告警看板。"
+      },
+      {
+        "name": "Postman",
+        "url": "https://www.postman.com/",
+        "blurb": "接口调试、技术支持排障与联调。"
+      },
+      {
+        "name": "draw.io",
+        "url": "https://app.diagrams.net/",
+        "blurb": "系统架构图、时序图与设计评审材料。"
+      },
+      {
+        "name": "Notion",
+        "url": "https://www.notion.com/",
+        "blurb": "技术文档与知识库协作编写。"
+      },
+      {
+        "name": "Swagger / OpenAPI",
+        "url": "https://swagger.io/tools/swagger-ui/",
+        "blurb": "接口文档编写与联调。"
+      },
+      {
+        "name": "PyCharm",
+        "url": "https://www.jetbrains.com/pycharm/",
+        "blurb": "Python IDE：编码、调试、测试与包管理。"
+      },
+      {
+        "name": "Scrapy",
+        "url": "https://scrapy.org/",
+        "blurb": "Python 爬虫框架：数据采集、管道与中间件。"
+      },
+      {
+        "name": "Playwright",
+        "url": "https://playwright.dev/python/",
+        "blurb": "浏览器自动化与动态页面采集（Python）。"
+      },
+      {
+        "name": "requests",
+        "url": "https://requests.readthedocs.io/",
+        "blurb": "Python HTTP 库：接口请求与数据拉取。"
+      }
+    ]
+  },
+    "aliases": {
+    "HR": "人力资源",
+    "人事": "人力资源",
+    "招聘": "人力资源",
+    "财务": "会计",
+    "出纳": "会计",
+    "PM": "产品经理",
+    "产品": "产品经理",
+    "程序员": "软件工程师",
+    "开发": "软件工程师",
+    "后端": "软件工程师",
+    "前端": "软件工程师",
+    "Java": "软件工程师",
+    "java": "软件工程师",
+    "java工程师": "软件工程师",
+    "Java前端工程师": "软件工程师",
+    "Java工程师": "软件工程师",
+    "python": "软件工程师",
+    "Python": "软件工程师",
+    "python工程师": "软件工程师",
+    "Python工程师": "软件工程师",
+    "爬虫工程师": "软件工程师",
+    "数据采集": "软件工程师"
+  }
+}

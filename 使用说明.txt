@@ -1,0 +1,25 @@
+圆桌App（独立可执行版 v2.0）
+====================
+
+【Windows】
+1. 编辑同目录 .env，填入 AGICTO_API_KEY
+2. 双击 圆桌App.exe
+
+【macOS】（本机已装好 Python 运行时）
+1. 编辑同目录 .env，填入 AGICTO_API_KEY
+2. 双击「启动圆桌App.command」，或在终端执行：
+   cd 本目录
+   source .venv/bin/activate
+   python main.py
+3. 若缺依赖：uv venv --python 3.12 .venv && uv pip install -r requirements-mac.txt -p .venv/bin/python
+
+【说明】
+- 版本：v2.0
+- 关闭窗口即结束圆桌
+- 职业数据在程序目录：data/{职业名}/
+- 本目录的 workspace / .agents / data 可保留升级
+- 若启动失败，看「圆桌App-错误日志.txt」
+- Windows 需要 WebView2；Mac 使用系统 WebKit（pywebview）
+
+打包时间：2026-09-09 04:40
+Mac 适配：2026-10-11

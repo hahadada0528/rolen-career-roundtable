@@ -1,0 +1,41 @@
+# secrets & local env
+.env
+.env.local
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+# Keep app bytecode (Mac runtime); drop only caches
+**/__pycache__/
+
+# Windows frozen package (too large for Git; not needed for Mac runtime)
+_internal/
+圆桌App.exe
+圆桌App-错误日志.txt
+
+# runtime / user data
+data/
+outputs/*
+!outputs/.gitkeep
+workspace/uploads/
+workspace/job-captures/
+workspace/memory/
+workspace/history.json
+workspace/status.json
+workspace/pipeline.json
+agent-loop.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
