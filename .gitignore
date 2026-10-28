@@ -40,3 +40,11 @@ Thumbs.db
 .vscode/
 *.swp
 **/__pycache__/
+
+# portfolio binaries stay local (not for GitHub)
+portfolio/*.pdf
+portfolio/*.docx
+outputs/*.pdf
+outputs/*.docx
+# portfolio binaries & shots stay local (not for GitHub)
+portfolio/screenshots/

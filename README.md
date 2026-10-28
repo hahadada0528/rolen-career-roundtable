@@ -12,15 +12,6 @@
 
 ---
 
-## 作品集 PDF
-
-与 GEO 工具相同的导出方式（reportlab + 本机中文字体）生成：
-
-- [作品集 PDF](portfolio/睿览-职业工作手册圆桌-作品集.pdf)
-- [作品集 Word](portfolio/睿览-职业工作手册圆桌-作品集.docx)
-- 文稿源：`portfolio/作品集-睿览职业工作手册圆桌.md`
-- 重新导出：`python scripts/export_portfolio.py`
-
 ## 作品集摘要
 
 | 维度 | 说明 |
